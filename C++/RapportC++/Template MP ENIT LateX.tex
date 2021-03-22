@@ -107,7 +107,7 @@
             \vspace{0.4\baselineskip} Application de gestion de réservation du vol
             \\[0.6\baselineskip]}}}} \vspace{\baselineskip}
     \centerline{\Large \textbf{Réalisé par~:}} \vspace{\baselineskip}
-    \centerline{\Large \textbf{bonjour h;;;;;;;;;;i}} \vspace{\baselineskip}
+    \centerline{\Large \textbf{Kaddoudi Louy}} \vspace{\baselineskip}
     \centerline{\Large \textbf{Sabri Ben Naceur}} \vspace{\baselineskip}
     \centerline{\Large \textbf{Classe~: 2AGE1 }}\vspace{2\baselineskip}
     \centerline{\Large\textbf{Encadré par~:}}\vspace{\baselineskip}
@@ -162,8 +162,8 @@ Le texte du rapport peut être fourni en Français ou en Anglais. Les rapports ser
 \newpage
 
 	\section{Introduction}
-		Étant donné qu'il s'agit d'un nouvel outil de programmation C++, il est primordial de commencer par une étude générale portant sur les logiciels à utiliser pendant la réalisation de notre mini projet ainsi qu?une étude préliminaire de ce dernier.
-		Le projet vise à réaliser d'une application graphique permettant de gérer les réservations des vols au niveau d?une agence de voyage. 
+		Étant donné qu'il s'agit d'un nouvel outil de programmation C++, il est primordial de commencer par une étude générale portant sur les logiciels à utiliser pendant la réalisation de notre mini projet ainsi qu'une étude préliminaire de ce dernier.
+		Le projet vise à réaliser d'une application graphique permettant de gérer les réservations des vols au niveau d'une agence de voyage. 
 		
 
 	\section{Présentation logicielle}
@@ -197,12 +197,12 @@ Le texte du rapport peut être fourni en Français ou en Anglais. Les rapports ser
 		DB Browser for SQLite est un outil open source graphique de haute qualité pour créer, concevoir et modifier des fichiers de base de données compatibles avec SQLite. 
 		L'interface utilisée est de type tableur familière.
 		
-		\renewcommand{\labelitemi}{$\blacksquare$}
+		\renewcommand{\labelitemi}{$\bullet$}
 		\begin{itemize}
 			\item Les tables créées à l'aide de DB Browser à l'aide du système de base de données
 		\end{itemize}
 		
-		SQLite, en plus de l'interface graphique offerte par Qt Creator, nous permettront de créer une application accessible à toute catégorie d'utilisateurs vu sa facilité d'utilisation. En plus, cette combinaison garantit une meilleure optimisation pour l'administrateur qui sera capable de contrôler et de manipuler facilement les places dans son parking. 
+		SQLite, en plus de l'interface graphique offerte par Qt Creator, nous permettront de créer une application accessible à toute catégorie d'utilisateurs vu sa facilité d'utilisation. En plus, cette combinaison garantit une meilleure optimisation pour l'administrateur qui sera capable de contrôler et de manipuler facilement les places dans un vol. 
 		 
 		
 		\begin{figure}[htbp!]
@@ -220,14 +220,23 @@ Le texte du rapport peut être fourni en Français ou en Anglais. Les rapports ser
 			
 			
 			\begin{itemize}
-				\item Ajouter un vol (numéro vol, date et heure départ, date et heure d'arrivée, Aéroport départ, aéroport d'arrivée, numéro avion).
+				\item Ajouter un vol.
 				\item Rechercher et consulter des vols existant par date départ, destination etc.
 				\item Ajouter un voyageur et lui réserver un vol
 				\item Il peut aussi modifier ou annuler un vol.
 			\end{itemize}
 		
-			
-		\subsection{Étude et planification du projet }
+		\subsection{Diagramme des cas d'utilisations}
+		
+		Le diagramme des cas d'utilisations nous permettons de mieux comprendre actions réalisées par le système en interaction avec les acteurs en vue d'une finalité. L'ensemble des cas d'utilisation permet ainsi de décrire les exigences fonctionnelles d'un système en adoptant le point de vue et le langage de l'utilisateur final.
+		
+		\begin{figure}[htbp!]
+			\centering
+			\resizebox{0.6\textwidth}{!}{\includegraphics{usecase}}
+			\caption{Diagramme des cas d'utilisation)}
+			%\label{fig:exemple}
+		\end{figure}
+		
 			
 			\subsubsection{Étude de base de données}
 			
@@ -235,7 +244,7 @@ Le texte du rapport peut être fourni en Français ou en Anglais. Les rapports ser
 					
 					\begin{figure}[htbp!]
 						\centering
-						\resizebox{0.6\textwidth}{!}{\includegraphics{schemaDB}}
+						%\resizebox{0.6\textwidth}{!}{\includegraphics{schemaDB}}
 						\caption{Schéma relationnel de base de données}
 						%\label{fig:exemple}
 					\end{figure}
@@ -268,11 +277,55 @@ Le texte du rapport peut être fourni en Français ou en Anglais. Les rapports ser
 				\caption{Tables de base de données (PowerShell)}
 				%\label{fig:exemple}
 			\end{figure}
+		
 
 \newpage					
 		\section{Conclusion}	
 			Ce chapitre nous a permis de se placer dans le cadre du projet, et ce, en connaissant les logiciels de travail ainsi que les tables et les interfaces graphiques à développer.
-			Dans le chapitre suivant nous allons détailler la solution qu?on a proposé.
+			Dans le chapitre suivant nous allons détailler la solution qu'on a proposé.
+\newpage
+\chapter[Réalisation de l'interface graphique du Notre Projet]{\centering Réalisation de l'interface graphique du Notre Projet}
+\newpage
+
+	\section{Introduction}
+		
+	\section{Description Générale de l'interface graphique}
+			notre application peut être divisée en deux fenêtres:\\
+			\begin{itemize}
+				\item Fenêtre accueil.
+				\item Fenêtre secondaire.
+			\end{itemize}
+			La première fenêtre se charge de l'étape de validation des coordonnés. La deuxième fenêtre est divisée en plusieurs onglets et porte des différences liées aux natures de l'utilisateur.\\
+			
+			A note que notre application distingue deux types d'utilisateur:
+			\begin{itemize}
+				\item Voyageurs.
+				\item Administrateur.
+			\end{itemize}
+	
+	\section{Fenêtre d'accueil}
+		Une fenêtre d'accueil dans le quel l'utilisateur est demandé de remplir deux champs : 
+		\begin{itemize}
+			\item Le nom d'utilisateur.
+			\item Le mot de passe.
+		\end{itemize}
+		L'utilisateur de l'application quelque soit un voyageur ou un administrateur doit remplir ses coordonnés afin de valider son accès. après l'étape de saisie l'utilisateur spécifie la nature de son compte : compte "user" ou compte "Admin" puis il valide ses coordonnées par appuis  sur un bouton de validation.\\
+		Pour notre fonction principale "main" elle est le suivante
+		\begin{figure}[htbp!]
+			\centering
+			\resizebox{0.6\textwidth}{!}{\includegraphics{main}}
+			\caption{Fonction principale}
+			%\label{fig:exemple}
+		\end{figure}
+		 \paragraph {}La fonction main construit un objet du type "MainWindow" qui correspond à notre fenêtre principale. À l'aide de la fonction "show()" cette dernière est affichée sur l'écran.
+	
+	\section{Fenêtre "Admin"}
+	
+	\section{Fenêtre "User"}
+	
+	\section{Conclusion}
+			
+			
 			
 %	
 %La figure~\ref{fig:exemple} et le tableau~\ref{tab:exemple} sont
