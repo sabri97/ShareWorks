@@ -290,21 +290,21 @@ Le texte du rapport peut être fourni en Français ou en Anglais. Les rapports ser
 	\section{Introduction}
 		
 	\section{Description Générale de l'interface graphique}
-			notre application peut être divisée en deux fenêtres:\\
+			\paragraph{}Notre application peut être divisée en deux fenêtres:\\
 			\begin{itemize}
 				\item Fenêtre accueil.
 				\item Fenêtre secondaire.
 			\end{itemize}
 			La première fenêtre se charge de l'étape de validation des coordonnés. La deuxième fenêtre est divisée en plusieurs onglets et porte des différences liées aux natures de l'utilisateur.\\
 			
-			A note que notre application distingue deux types d'utilisateur:
+			A noté que notre application distingue deux types d'utilisateur:
 			\begin{itemize}
-				\item Voyageurs.
+				\item Voyageur.
 				\item Administrateur.
 			\end{itemize}
 	
 	\section{Fenêtre d'accueil}
-		Une fenêtre d'accueil dans le quel l'utilisateur est demandé de remplir deux champs : 
+		Une fenêtre d'accueil dans la quelle l'utilisateur est demandé de remplir deux champs : 
 		\begin{itemize}
 			\item Le nom d'utilisateur.
 			\item Le mot de passe.
@@ -318,12 +318,191 @@ Le texte du rapport peut être fourni en Français ou en Anglais. Les rapports ser
 			%\label{fig:exemple}
 		\end{figure}
 		 \paragraph {}La fonction main construit un objet du type "MainWindow" qui correspond à notre fenêtre principale. À l'aide de la fonction "show()" cette dernière est affichée sur l'écran.
-	
+		 
+		 \paragraph{}QT creator nous offre un outil de design des interfaces graphiques que nous avons utilisés pour concevoir une Fenêtre simple et facile à comprendre.
+		 les éléments mis dans la fenêtre d'accueil sont les suivants:
+		   \begin{figure}[htbp!]
+		   	\centering
+		   	\resizebox{0.6\textwidth}{!}{\includegraphics{elementPageAccueil}}
+		   	\caption{Objet désigne fenêtre d'accueil}
+		   	%\label{fig:exemple}
+		   \end{figure}
+		\paragraph{}Les éléments Utilisés sont des objets labels pour marquer des informations aux utilisateurs, des objets "Line Edit" pour les champs à remplir et des objets du type "radio Button" pour la sélection de le type du compte. Nous avons utilisé aussi des objets du type "Vertical Layout" et "Horizontal Layout" pour bien positionner nos éléments.  	
+		
+	\section{Vérification des données}
+		\paragraph{}L'étape de saisie des données est suivie d'une étape de validation. c'est une étape qui se fait en arriéré plan. Les données saisie sont comparés par d'autre mise dans un fichier texte "MP.txt". 
+		 
+		 \begin{figure}[htbp!]
+			\centering
+			\resizebox{0.4\textwidth}{!}{\includegraphics{textFile}}
+			\caption{Fichier .txt}
+			%\label{fig:exemple}
+		\end{figure}
+			
+		\paragraph{}Le fichier contienne l'identificateur de l'utilisateur, sont mot de passe et son type du compte séparés par une tabulation ou des espaces. La vérification des données se fait donc par recherche des données saisie dans ce fichier.
+		 	
+		 \paragraph{}la programmation événementielle est  fondé sur les événements. Elle s'oppose à la programmation séquentielle. Le programme sera principalement défini par ses réactions aux différents événements qui peuvent se produire, c'est-à-dire des changements d'état de variable. Dans notre cas l'appui sur le bouton de validation déclenche le processus de vérification des données.
+		 
+		 \paragraph{} La première chose à faire est de récupérer les deux champs saisie dans deux variables. Puis on ouvre le fichier contenant les informations et  On vérifie l'existence de ce dernier. L'utilisateur sera informé par un message du type "warning" si l'opération d'ouverture est mal démarré. 
+		 
+		 \paragraph{}l'étape suivante est la décomposition du fichier en plusieurs lignes chaque ligne est décomposée à son tour en plusieurs champs qui seront mis dans une liste de la classe user conçu pour contenir les données d'utilisateurs.Cette décomposition se fait à l'aide d'une expression régulière qui détecte les tabulations ou les espaces. À noter que ces deux caractères sont utilisés pour séparer les champs dans notre fichier MP.txt contenant les données des utilisateurs.
+		 
+		 \begin{figure}[h]
+		 	\centering
+		 	\resizebox{0.6\textwidth}{!}{\includegraphics{verif1}}
+		 	\caption{Code vérification des données -1-}
+		 	%\label{fig:exemple}
+		 \end{figure}
+		  
+		  \paragraph{}L'utilitariste peut être un voyageur ou un administrateur. La fonction "isChecked" vérifie la sélection de type du compte. Puis en utilise une boucle "while" pour parcourir la liste conçue et on vérifie l'existence des données saisies dans notre fichier.  
+		 		  
+		   \begin{figure}[h]
+		  	\centering
+		  	\resizebox{0.9\textwidth}{!}{\includegraphics{verif2}}
+		  	\caption{Code vérification des données -2-}
+		  	%\label{fig:exemple}
+		  \end{figure}
+		
+		  
+		 
 	\section{Fenêtre "Admin"}
+			La fenêtre "Admin" est constituée de plusieurs onglets. chacun d'eux porte des fonctionnalités aux utilisateurs du type administrateur. Ces onglets sont:
+			\begin{itemize}
+				\item Onglet "Welcome": l'onglet principale pour l'administrateur.
+				\item Onglet "Login": Permet la gestion du fichier contenant informations utilisateur.
+				\item Onglet "Flight management" Permet la gestion des vols.
+				\item Onglet "About" \textbf{add something here !!!!!!}
+				\item \textbf{if we add !!!!!!}
+			\end{itemize}
+	
+		\subsection{Onglet "Login"}
+			\paragraph{}L'onglet "Login" permet la gestion du fichier contenant les informations utilisateurs. A travers cet onglet l'administrateur peut ajouter d'autre voyageur ou d'autre administrateurs. 
+\newpage
+			\paragraph{}Pour le design de cette onglet nous avons choisie les objets suivants:
+			\begin{figure}[h]
+				\centering
+				\resizebox{0.7\textwidth}{!}{\includegraphics{LogElem}}
+				\caption{Objets onglet "Login"}
+				%\label{fig:exemple}
+			\end{figure}
+		
+		\paragraph{} Nous avons utilisé deux bouton "pushBttonRead" et "pushBottonWrite" pour permettre à l'administrateur soit ouvrir le fichier en mode lecteur ou l'ouvrir en mode écriture. L'administrateur saisit ses informations dans un champ "plainTextEdit".  
+		
+		\paragraph{}L'ouverture du fichier en mode lecteur se déclenche suite à un appui sur le bouton "Read". Le code exécute suite à cette action est le suivant:
+		\begin{figure}[h]
+			\centering
+			\resizebox{0.9\textwidth}{!}{\includegraphics{Readb}}
+			\caption{Code pour la fonction de lecteur}
+			%\label{fig:exemple}
+		\end{figure}
+			\paragraph{} Avec La fonction "gestOpenFileName" qui permet d'initialiser le chemin à ouvrir ainsi que d'appliquer un filtre sur les types de fichier (dans notre cas en applique un filtre sur les fichiers de type ".txt"). On vérifie ensuite que le processus d'ouverture du fichier en mode lecteur est bien terminé. A noter qu'en cas d'erreur on afficher un message de type "warning".
+			Le contenu du fichier est affiché dans le champ "plainTextEdit".
+			
+			
+		\paragraph{}L'ouverture du fichier en mode écriture se déclenche suite à un appui sur le bouton "Wirte". Le code exécute suite à cette action est le suivant:
+		\begin{figure}[h]
+			\centering
+			\resizebox{0.7\textwidth}{!}{\includegraphics{Writeb}}
+			\caption{Code pour la fonction d'écriture}
+			%\label{fig:exemple}
+		\end{figure}
+		\paragraph{} Le ficher à ouvrir par défaut est "MP.txt". On vérifie ensuite que le processus d'ouverture du fichier en mode écriture est bien terminé. A noter qu'en cas d'erreur on afficher un message de type "warning". Le texte saisi dans le champ "plainTextEdit" est transféré au fichier suite à l'appui sur le bouton "wirte".
+		
+		
+		
+			
+		\subsection{Onglet "Flight management"}
+		
+		
+		
+				
 	
 	\section{Fenêtre "User"}
 	
 	\section{Conclusion}
+	
+\newpage
+\chapter[Validation du projet]{\centering Validation du projet}
+\newpage
+
+	
+	\section{Introduction}
+	
+	\section{Interface de "Login"}
+	En lançant l'application, la fenêtre principale "Login" sera affichée sur votre écran. Cette interface, contient deux champs à saisir: "User name" et "Pass word".
+ 	La section du pute de compte se fait avec les deux "radio butons" : "Admin", "User".
+ 	La validation des données est assurées par appuis sur le bouton "LogIn".
+ 	
+ 		\begin{figure}[h]
+ 		\centering
+ 		%\resizebox{0.7\textwidth}{!}{\includegraphics{Writeb}}
+ 		\caption{Fenêtre principale}
+ 		%\label{fig:exemple}
+ 		\end{figure}
+ 	
+	
+	\section{Interface de "Admin"}
+		\begin{figure}[h]
+			\centering
+			%\resizebox{0.7\textwidth}{!}{\includegraphics{Writeb}}
+			\caption{"Admin"}
+			%\label{fig:exemple}
+		\end{figure}
+		
+		Pour accéder a l?interface "Admin" il suffit de taper le User ID, le mot de passe et sélectionner le bouton "Admin" puis "Login"
+
+		\begin{figure}[h]
+			\centering
+			%\resizebox{0.7\textwidth}{!}{\includegraphics{Writeb}}
+			\caption{"Welcome Admin"}
+			%\label{fig:exemple}
+		\end{figure}
+	
+		Lors du lancement de l'application, si on choisit dans la fenêtre d'accueil, le bouton radio "Admin " la fenêtre si dessous sera affiché :
+		
+		\begin{figure}[h]
+			\centering
+			%\resizebox{0.7\textwidth}{!}{\includegraphics{Writeb}}
+			\caption{Fenêtre dédiée à l'Admin}
+			%\label{fig:exemple}
+		\end{figure}
+	
+		L'onglet "Login info" est la partie qui nous permet de modifier nos données de connexion, si on choisit le bouton "Read" sa nous mène à ouvrir le fichier ou on a sauvegardé nos données:
+	
+		\begin{figure}[h]
+			\centering
+			%\resizebox{0.7\textwidth}{!}{\includegraphics{Writeb}}
+			\caption{"Onglet "Login info" Read process}
+			%\label{fig:exemple}
+		\end{figure}
+	
+		si on choisit le bouton "Wirte" sa nous mène enregistrer nos données dans le fichier où on a sauvegardé nos données:
+		
+		\begin{figure}[h]
+			\centering
+			%\resizebox{0.7\textwidth}{!}{\includegraphics{Writeb}}
+			\caption{"Onglet "Login info" Wirte process}
+			%\label{fig:exemple}
+		\end{figure}
+	
+		\subsection{Onglet "welcome"}
+		
+		\subsection{Onglet "Login info"}
+		
+		\subsection{Onglet "Flight management"}
+		
+		\subsection{Onglet "About"}
+		
+	\section{Interface de "User"}
+	
+		\subsection{Onglet "welcome"}
+		
+		\subsection{Onglet "flight reservation and consultation"}
+		
+		\subsection{Onglet "About"}
+		
+	\section{Conclusion}
+	
 			
 			
 			

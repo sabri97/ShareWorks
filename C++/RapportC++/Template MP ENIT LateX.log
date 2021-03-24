@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2021.2.27)  22 MAR 2021 20:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2021.2.27)  24 MAR 2021 14:42
 entering extended mode
 **"./Template MP ENIT LateX.tex"
 ("Template MP ENIT LateX.tex"
@@ -380,79 +380,79 @@ Overfull \hbox (29.45854pt too wide) in paragraph at lines 41--124
 
 {C:/Users/sabri/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./images/logo-u
 tm.pdf> <./images/en-tete-enit-nouveau-logo.pdf>] ("Template MP ENIT LateX.toc"
-)
+ [2
+
+])
 \tf@toc=\write3
 \openout3 = `"Template MP ENIT LateX.toc"'.
 
- [2
-
-] ("Template MP ENIT LateX.lof")
+ [3] ("Template MP ENIT LateX.lof")
 \tf@lof=\write4
 \openout4 = `"Template MP ENIT LateX.lof"'.
 
- [3
+ [4
 
 ] ("Template MP ENIT LateX.lot")
 \tf@lot=\write5
 \openout5 = `"Template MP ENIT LateX.lot"'.
 
 
-[4
+[5
 
-] [5
+] [6
 
 ]
 Chapitre 1.
-[6
+[7
 
 ]
-<images/qt_logo.png, id=30, 278.54062pt x 130.23656pt>
+<images/qt_logo.png, id=35, 278.54062pt x 130.23656pt>
 File: images/qt_logo.png Graphic file (type png)
 <use images/qt_logo.png>
 Package pdftex.def Info: images/qt_logo.png  used on input line 178.
 (pdftex.def)             Requested size: 278.53993pt x 130.23624pt.
-<images/sqlit_logo.png, id=31, 258.21469pt x 126.4725pt>
+<images/sqlit_logo.png, id=36, 258.21469pt x 126.4725pt>
 File: images/sqlit_logo.png Graphic file (type png)
 <use images/sqlit_logo.png>
 Package pdftex.def Info: images/sqlit_logo.png  used on input line 190.
 (pdftex.def)             Requested size: 258.21405pt x 126.47218pt.
- [7 <./images/qt_logo.png>]
-<images/browser_logo.png, id=38, 106.89937pt x 109.1578pt>
+ [8 <./images/qt_logo.png>]
+<images/browser_logo.png, id=41, 106.89937pt x 109.1578pt>
 File: images/browser_logo.png Graphic file (type png)
 <use images/browser_logo.png>
 Package pdftex.def Info: images/browser_logo.png  used on input line 210.
 (pdftex.def)             Requested size: 106.8991pt x 109.15753pt.
- [8 <./images/sqlit_logo.png> <./images/browser_logo.png>]
-<images/usecase.png, id=43, 639.38875pt x 789.95125pt>
+ [9 <./images/sqlit_logo.png> <./images/browser_logo.png>]
+<images/usecase.png, id=46, 639.38875pt x 789.95125pt>
 File: images/usecase.png Graphic file (type png)
 <use images/usecase.png>
 Package pdftex.def Info: images/usecase.png  used on input line 235.
 (pdftex.def)             Requested size: 639.38718pt x 789.94931pt.
- [9 <./images/usecase.png>]
-<images/browser1.png, id=49, 788.19469pt x 401.24907pt>
+ [10 <./images/usecase.png>]
+<images/browser1.png, id=52, 788.19469pt x 401.24907pt>
 File: images/browser1.png Graphic file (type png)
 <use images/browser1.png>
 Package pdftex.def Info: images/browser1.png  used on input line 267.
 (pdftex.def)             Requested size: 788.19276pt x 401.24808pt.
-<images/browser2.png, id=50, 685.05937pt x 472.01344pt>
+<images/browser2.png, id=53, 685.05937pt x 472.01344pt>
 File: images/browser2.png Graphic file (type png)
 <use images/browser2.png>
 Package pdftex.def Info: images/browser2.png  used on input line 268.
 (pdftex.def)             Requested size: 685.0577pt x 472.01228pt.
-<images/browser3.png, id=51, 695.59875pt x 471.26062pt>
+<images/browser3.png, id=54, 695.59875pt x 471.26062pt>
 File: images/browser3.png Graphic file (type png)
 <use images/browser3.png>
 Package pdftex.def Info: images/browser3.png  used on input line 269.
 (pdftex.def)             Requested size: 695.59706pt x 471.25948pt.
-<images/schemaDBshell.png, id=52, 481.04718pt x 436.63126pt>
+<images/schemaDBshell.png, id=55, 481.04718pt x 436.63126pt>
 File: images/schemaDBshell.png Graphic file (type png)
 <use images/schemaDBshell.png>
 Package pdftex.def Info: images/schemaDBshell.png  used on input line 276.
 (pdftex.def)             Requested size: 481.046pt x 436.63019pt.
- [10 <./images/browser1.png> <./images/browser2.png> <./images/browser3.png>] [
-11 <./images/schemaDBshell.png>]
+ [11 <./images/browser1.png> <./images/browser2.png> <./images/browser3.png>] [
+12 <./images/schemaDBshell.png>]
 Chapitre 2.
-[12
+[13
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 293--294
@@ -464,36 +464,119 @@ Underfull \hbox (badness 10000) in paragraph at lines 298--299
 
  []
 
-<images/main.png, id=62, 281.55188pt x 156.585pt>
+<images/main.png, id=66, 281.55188pt x 156.585pt>
 File: images/main.png Graphic file (type png)
 <use images/main.png>
 Package pdftex.def Info: images/main.png  used on input line 316.
 (pdftex.def)             Requested size: 281.55118pt x 156.58461pt.
-[13 <./images/main.png>]
+<images/elementPageAccueil.png, id=67, 319.94531pt x 249.18094pt>
+File: images/elementPageAccueil.png Graphic file (type png)
+<use images/elementPageAccueil.png>
+Package pdftex.def Info: images/elementPageAccueil.png  used on input line 326.
+
+(pdftex.def)             Requested size: 319.94452pt x 249.18031pt.
+
 Overfull \hbox (14.04903pt too wide) has occurred while \output is active
 \T1/aer/m/n/12 14 \T1/aer/m/sl/12 CHAPITRE 2.  RÉALISATION DE L'INTERFACE GRAPH
 IQUE DU NOTRE PROJET
  []
 
-[14] ("Template MP ENIT LateX.aux") ) 
+[14 <./images/main.png>]
+<images/textFile.png, id=71, 200.24812pt x 168.63pt>
+File: images/textFile.png Graphic file (type png)
+<use images/textFile.png>
+Package pdftex.def Info: images/textFile.png  used on input line 337.
+(pdftex.def)             Requested size: 200.24763pt x 168.62958pt.
+ [15 <./images/elementPageAccueil.png> <./images/textFile.png>]
+<images/verif1.png, id=75, 357.58594pt x 338.01282pt>
+File: images/verif1.png Graphic file (type png)
+<use images/verif1.png>
+Package pdftex.def Info: images/verif1.png  used on input line 352.
+(pdftex.def)             Requested size: 357.58505pt x 338.01198pt.
+<images/verif2.png, id=76, 645.16031pt x 469.00218pt>
+File: images/verif2.png Graphic file (type png)
+<use images/verif2.png>
+Package pdftex.def Info: images/verif2.png  used on input line 361.
+(pdftex.def)             Requested size: 645.15872pt x 469.00104pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (14.04903pt too wide) has occurred while \output is active
+\T1/aer/m/n/12 16 \T1/aer/m/sl/12 CHAPITRE 2.  RÉALISATION DE L'INTERFACE GRAPH
+IQUE DU NOTRE PROJET
+ []
+
+[16 <./images/verif1.png>] [17 <./images/verif2.png>]
+<images/LogElem.png, id=83, 316.18124pt x 109.1578pt>
+File: images/LogElem.png Graphic file (type png)
+<use images/LogElem.png>
+Package pdftex.def Info: images/LogElem.png  used on input line 384.
+(pdftex.def)             Requested size: 316.18047pt x 109.15753pt.
+<images/Readb.png, id=84, 517.18219pt x 186.6975pt>
+File: images/Readb.png Graphic file (type png)
+<use images/Readb.png>
+Package pdftex.def Info: images/Readb.png  used on input line 394.
+(pdftex.def)             Requested size: 517.18092pt x 186.69704pt.
+<images/Writeb.png, id=85, 368.1253pt x 163.3603pt>
+File: images/Writeb.png Graphic file (type png)
+<use images/Writeb.png>
+Package pdftex.def Info: images/Writeb.png  used on input line 405.
+(pdftex.def)             Requested size: 368.1244pt x 163.3599pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (14.04903pt too wide) has occurred while \output is active
+\T1/aer/m/n/12 18 \T1/aer/m/sl/12 CHAPITRE 2.  RÉALISATION DE L'INTERFACE GRAPH
+IQUE DU NOTRE PROJET
+ []
+
+[18 <./images/LogElem.png> <./images/Readb.png>] [19 <./images/Writeb.png>]
+Chapitre 3.
+[20
+
+]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (0.87993pt too wide) in paragraph at lines 471--472
+[]\T1/aer/m/n/12 L'onglet "Lo-gin info" est la par-tie qui nous per-met de mo-d
+i-fier nos don-nées de connexion,
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+[22] [23] ("Template MP ENIT LateX.aux") ) 
 Here is how much of TeX's memory you used:
- 4955 strings out of 480790
- 71167 string characters out of 2897301
- 318708 words of memory out of 3000000
- 20816 multiletter control sequences out of 15000+200000
+ 5008 strings out of 480790
+ 72130 string characters out of 2897301
+ 321708 words of memory out of 3000000
+ 20869 multiletter control sequences out of 15000+200000
  568367 words of font info for 93 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  32i,10n,45p,531b,426s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/sabri/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmb10.pfb><C:/Users/sabri/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/sabri/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/sabri/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Use
-rs/sabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b>
-Output written on "Template MP ENIT LateX.pdf" (14 pages, 345343 bytes).
+<C:/Users/sabri/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmb10.pfb><C:/Users/sabri/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/sabri/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/s
+abri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C
+:/Users/sabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb>
+Output written on "Template MP ENIT LateX.pdf" (23 pages, 449607 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
+ 122 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
