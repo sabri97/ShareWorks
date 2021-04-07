@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2021.2.27)  24 MAR 2021 14:42
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2021.2.27)  22 MAR 2021 13:45
+>>>>>>> Stashed changes
 entering extended mode
 **"./Template MP ENIT LateX.tex"
 ("Template MP ENIT LateX.tex"
@@ -289,21 +293,21 @@ File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
 ) ("Template MP ENIT LateX.aux")
 \openout1 = `"Template MP ENIT LateX.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Trying to load font information for T1+aer on input line 37
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Trying to load font information for T1+aer on input line 39
 .
 
 (C:\Users\sabri\AppData\Local\Programs\MiKTeX\tex/latex/ae\t1aer.fd
@@ -324,32 +328,32 @@ ii
 \makeMPintoPDFobject=\count271
 \everyMPtoPDFconversion=\toks27
 )
-LaTeX Info: Redefining \degres on input line 37.
-LaTeX Info: Redefining \dots on input line 37.
-LaTeX Info: Redefining \up on input line 37.
+LaTeX Info: Redefining \degres on input line 39.
+LaTeX Info: Redefining \dots on input line 39.
+LaTeX Info: Redefining \up on input line 39.
 <images/logo-utm.pdf, id=1, 97.36375pt x 106.3975pt>
 File: images/logo-utm.pdf Graphic file (type pdf)
 <use images/logo-utm.pdf>
-Package pdftex.def Info: images/logo-utm.pdf  used on input line 119.
+Package pdftex.def Info: images/logo-utm.pdf  used on input line 121.
 (pdftex.def)             Requested size: 97.3635pt x 106.39723pt.
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 11
-9.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 12
+1.
  (C:\Users\sabri\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 11
-9.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 12
+1.
 
 (C:\Users\sabri\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 119
+LaTeX Font Info:    Trying to load font information for U+msa on input line 121
 .
 
 (C:\Users\sabri\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 119
+LaTeX Font Info:    Trying to load font information for U+msb on input line 121
 .
 
 (C:\Users\sabri\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -359,26 +363,27 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: images/en-tete-enit-nouveau-logo.pdf Graphic file (type pdf)
 <use images/en-tete-enit-nouveau-logo.pdf>
 Package pdftex.def Info: images/en-tete-enit-nouveau-logo.pdf  used on input li
-ne 119.
+ne 121.
 (pdftex.def)             Requested size: 80.29979pt x 84.31477pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--119
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
 
  []
 
 
-Overfull \hbox (2.61609pt too wide) in paragraph at lines 119--119
+Overfull \hbox (2.61609pt too wide) in paragraph at lines 121--121
 [][] []
  []
 
 
-Overfull \hbox (29.45854pt too wide) in paragraph at lines 41--124
+Overfull \hbox (29.45854pt too wide) in paragraph at lines 43--123
 []   [] 
  []
 
 [1
 
 {C:/Users/sabri/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./images/logo-u
+<<<<<<< Updated upstream
 tm.pdf> <./images/en-tete-enit-nouveau-logo.pdf>] ("Template MP ENIT LateX.toc"
  [2
 
@@ -387,18 +392,33 @@ tm.pdf> <./images/en-tete-enit-nouveau-logo.pdf>] ("Template MP ENIT LateX.toc"
 \openout3 = `"Template MP ENIT LateX.toc"'.
 
  [3] ("Template MP ENIT LateX.lof")
+=======
+tm.pdf> <./images/en-tete-enit-nouveau-logo.pdf>] [2]
+("Template MP ENIT LateX.toc")
+\tf@toc=\write3
+\openout3 = `"Template MP ENIT LateX.toc"'.
+
+ [3
+
+] ("Template MP ENIT LateX.lof")
+>>>>>>> Stashed changes
 \tf@lof=\write4
 \openout4 = `"Template MP ENIT LateX.lof"'.
 
  [4
 
-] ("Template MP ENIT LateX.lot")
+]
+("Template MP ENIT LateX.lot")
 \tf@lot=\write5
 \openout5 = `"Template MP ENIT LateX.lot"'.
 
+ [5
 
+<<<<<<< Updated upstream
 [5
 
+=======
+>>>>>>> Stashed changes
 ] [6
 
 ]
@@ -406,22 +426,31 @@ Chapitre 1.
 [7
 
 ]
+<<<<<<< Updated upstream
 <images/qt_logo.png, id=35, 278.54062pt x 130.23656pt>
+=======
+<images/qt_logo.png, id=34, 278.54062pt x 130.23656pt>
+>>>>>>> Stashed changes
 File: images/qt_logo.png Graphic file (type png)
 <use images/qt_logo.png>
-Package pdftex.def Info: images/qt_logo.png  used on input line 178.
+Package pdftex.def Info: images/qt_logo.png  used on input line 180.
 (pdftex.def)             Requested size: 278.53993pt x 130.23624pt.
+<<<<<<< Updated upstream
 <images/sqlit_logo.png, id=36, 258.21469pt x 126.4725pt>
+=======
+<images/sqlit_logo.png, id=35, 258.21469pt x 126.4725pt>
+>>>>>>> Stashed changes
 File: images/sqlit_logo.png Graphic file (type png)
 <use images/sqlit_logo.png>
-Package pdftex.def Info: images/sqlit_logo.png  used on input line 190.
+Package pdftex.def Info: images/sqlit_logo.png  used on input line 192.
 (pdftex.def)             Requested size: 258.21405pt x 126.47218pt.
  [8 <./images/qt_logo.png>]
 <images/browser_logo.png, id=41, 106.89937pt x 109.1578pt>
 File: images/browser_logo.png Graphic file (type png)
 <use images/browser_logo.png>
-Package pdftex.def Info: images/browser_logo.png  used on input line 210.
+Package pdftex.def Info: images/browser_logo.png  used on input line 215.
 (pdftex.def)             Requested size: 106.8991pt x 109.15753pt.
+<<<<<<< Updated upstream
  [9 <./images/sqlit_logo.png> <./images/browser_logo.png>]
 <images/usecase.png, id=46, 639.38875pt x 789.95125pt>
 File: images/usecase.png Graphic file (type png)
@@ -577,6 +606,53 @@ abri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C
 Output written on "Template MP ENIT LateX.pdf" (23 pages, 449607 bytes).
 PDF statistics:
  122 PDF objects out of 1000 (max. 8388607)
+=======
+<images/schemaDB.png, id=42, 333.49594pt x 183.68625pt>
+File: images/schemaDB.png Graphic file (type png)
+<use images/schemaDB.png>
+Package pdftex.def Info: images/schemaDB.png  used on input line 243.
+(pdftex.def)             Requested size: 333.49512pt x 183.68578pt.
+ [9 <./images/sqlit_logo.png> <./images/browser_logo.png>]
+<images/browser1.png, id=46, 379.4175pt x 194.22563pt>
+File: images/browser1.png Graphic file (type png)
+<use images/browser1.png>
+Package pdftex.def Info: images/browser1.png  used on input line 263.
+(pdftex.def)             Requested size: 379.41656pt x 194.22514pt.
+<images/browser2.png, id=47, 203.25937pt x 202.50656pt>
+File: images/browser2.png Graphic file (type png)
+<use images/browser2.png>
+Package pdftex.def Info: images/browser2.png  used on input line 264.
+(pdftex.def)             Requested size: 203.25887pt x 202.50604pt.
+<images/browser3.png, id=48, 213.79875pt x 150.5625pt>
+File: images/browser3.png Graphic file (type png)
+<use images/browser3.png>
+Package pdftex.def Info: images/browser3.png  used on input line 265.
+(pdftex.def)             Requested size: 213.79822pt x 150.56212pt.
+<images/schemaDBshell.png, id=49, 286.06876pt x 271.0125pt>
+File: images/schemaDBshell.png Graphic file (type png)
+<use images/schemaDBshell.png>
+Package pdftex.def Info: images/schemaDBshell.png  used on input line 272.
+(pdftex.def)             Requested size: 286.06805pt x 271.01183pt.
+ [10 <./images/schemaDB.png>] [11 <./images/browser1.png> <./images/browser2.pn
+g> <./images/browser3.png> <./images/schemaDBshell.png>] [12]
+("Template MP ENIT LateX.aux") ) 
+Here is how much of TeX's memory you used:
+ 4950 strings out of 480790
+ 71094 string characters out of 2897301
+ 318708 words of memory out of 3000000
+ 20811 multiletter control sequences out of 15000+200000
+ 568367 words of font info for 93 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 32i,10n,45p,531b,426s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/sabri/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmb10.pfb><C:/Users/sabri/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/sabri/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/sabri/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb>
+Output written on "Template MP ENIT LateX.pdf" (12 pages, 423526 bytes).
+PDF statistics:
+ 73 PDF objects out of 1000 (max. 8388607)
+>>>>>>> Stashed changes
  0 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

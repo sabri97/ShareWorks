@@ -3,6 +3,7 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Logo du logiciel Qt Creator}}{8}%
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Logo du logiciel SQLite}}{9}%
 \contentsline {figure}{\numberline {1.3}{\ignorespaces Logo du logiciel DB Browser (SQLite)}}{9}%
+<<<<<<< Updated upstream
 \contentsline {figure}{\numberline {1.4}{\ignorespaces Diagramme des cas d'utilisation)}}{10}%
 \contentsline {figure}{\numberline {1.5}{\ignorespaces Sch\'ema relationnel de base de donn\'ees}}{10}%
 \contentsline {figure}{\numberline {1.6}{\ignorespaces Tables de base de donn\'ees}}{11}%
@@ -23,3 +24,8 @@
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Fen\^etre d\'edi\'ee \`a l'Admin}}{22}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces "Onglet "Login info" Read process}}{22}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces "Onglet "Login info" Wirte process}}{23}%
+=======
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Sch\'ema relationnel de base de donn\'ees}}{10}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Tables de base de donn\'ees}}{11}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Tables de base de donn\'ees (PowerShell)}}{11}%
+>>>>>>> Stashed changes
