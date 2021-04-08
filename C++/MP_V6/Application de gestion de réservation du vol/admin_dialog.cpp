@@ -10,6 +10,8 @@
 #include <QFileInfo>
 #include<QDateTime>
 
+QString txt_time;
+QString txt_date;
 
 QString file_name ="./Data/TXT files/myfile.txt";
 Admin_Dialog::Admin_Dialog(QWidget *parent) :
@@ -86,17 +88,16 @@ void Admin_Dialog::myfunction()
     QTime time = QTime::currentTime();
     QDate date = QDate::currentDate();
 
-    QString txt_time = time.toString("hh : mm : ss");
     if(time.second() % 2 == 0)
     {
         txt_time[3] = ' ';
         txt_time[8] = ' ';
     }
     ui->label_time->setText(txt_time);
+    txt_time = time.toString("hh : mm : ss");
 
-    QString txt_date = date.toString();
+    txt_date = date.toString();
     ui->label_date->setText(txt_date);
-
 }
 
 void Admin_Dialog::on_gestionVol_clicked()

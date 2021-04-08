@@ -1,0 +1,15 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\admin_dialog.o
+./debug\user.o
+./debug\user_dialog.o
+./debug\login.o
+./debug\gestionvol_dialog.o
+./debug\gestionvoyageur_dialog.o
+./debug\moc_mainwindow.o
+./debug\moc_admin_dialog.o
+./debug\moc_user_dialog.o
+./debug\moc_gestionvol_dialog.o
+./debug\moc_gestionvoyageur_dialog.o
+);

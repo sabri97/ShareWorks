@@ -1,5 +1,9 @@
 #include "gestionvoyageur_dialog.h"
 #include "ui_gestionvoyageur_dialog.h"
+#include "admin_dialog.h"
+
+extern QString txt_time;
+extern QString txt_date;
 
 GestionVoyageur_Dialog::GestionVoyageur_Dialog(QWidget *parent) :
     QDialog(parent),
@@ -46,8 +50,8 @@ void GestionVoyageur_Dialog::on_save_clicked()
     QString telephone = ui->txt_telephone->text();
     QString mail = ui->txt_mail->text();
     QString numPassport = ui->txt_numPassport->text();
-    QString dateReservation = ui->txt_dateReservation->text();
-    QString heureReservation = ui->txt_heureReservation->text();
+    QString dateReservation = txt_date;
+    QString heureReservation = txt_time;
     QString idVol = ui->txt_idVol->text();
 
     if(!conn.ConnOpen()){qDebug()<<("Failed to open database"); return;}

@@ -38,7 +38,7 @@ public:
     QHBoxLayout *horizontalLayout_7;
     QPushButton *load;
     QPushButton *update;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QVBoxLayout *verticalLayout_2;
     QLabel *label_9;
@@ -138,57 +138,57 @@ public:
 
         verticalLayout_4->addLayout(horizontalLayout_7);
 
-        widget = new QWidget(GestionVoyageur_Dialog);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(11, 61, 421, 210));
-        horizontalLayout = new QHBoxLayout(widget);
+        layoutWidget = new QWidget(GestionVoyageur_Dialog);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(11, 61, 421, 210));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
-        label_9 = new QLabel(widget);
+        label_9 = new QLabel(layoutWidget);
         label_9->setObjectName(QStringLiteral("label_9"));
         label_9->setFont(font1);
 
         verticalLayout_2->addWidget(label_9);
 
-        label_6 = new QLabel(widget);
+        label_6 = new QLabel(layoutWidget);
         label_6->setObjectName(QStringLiteral("label_6"));
         label_6->setFont(font1);
 
         verticalLayout_2->addWidget(label_6);
 
-        label_3 = new QLabel(widget);
+        label_3 = new QLabel(layoutWidget);
         label_3->setObjectName(QStringLiteral("label_3"));
         label_3->setFont(font1);
 
         verticalLayout_2->addWidget(label_3);
 
-        label_5 = new QLabel(widget);
+        label_5 = new QLabel(layoutWidget);
         label_5->setObjectName(QStringLiteral("label_5"));
         label_5->setFont(font1);
 
         verticalLayout_2->addWidget(label_5);
 
-        label_7 = new QLabel(widget);
+        label_7 = new QLabel(layoutWidget);
         label_7->setObjectName(QStringLiteral("label_7"));
         label_7->setFont(font1);
 
         verticalLayout_2->addWidget(label_7);
 
-        label_8 = new QLabel(widget);
+        label_8 = new QLabel(layoutWidget);
         label_8->setObjectName(QStringLiteral("label_8"));
         label_8->setFont(font1);
 
         verticalLayout_2->addWidget(label_8);
 
-        label_4 = new QLabel(widget);
+        label_4 = new QLabel(layoutWidget);
         label_4->setObjectName(QStringLiteral("label_4"));
         label_4->setFont(font1);
 
         verticalLayout_2->addWidget(label_4);
 
-        label_2 = new QLabel(widget);
+        label_2 = new QLabel(layoutWidget);
         label_2->setObjectName(QStringLiteral("label_2"));
         label_2->setFont(font1);
 
@@ -199,20 +199,21 @@ public:
 
         verticalLayout_3 = new QVBoxLayout();
         verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
-        txt_idVoyageur = new QLineEdit(widget);
+        txt_idVoyageur = new QLineEdit(layoutWidget);
         txt_idVoyageur->setObjectName(QStringLiteral("txt_idVoyageur"));
+        txt_idVoyageur->setEnabled(false);
         txt_idVoyageur->setReadOnly(true);
 
         verticalLayout_3->addWidget(txt_idVoyageur);
 
         horizontalLayout_4 = new QHBoxLayout();
         horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
-        txt_nom = new QLineEdit(widget);
+        txt_nom = new QLineEdit(layoutWidget);
         txt_nom->setObjectName(QStringLiteral("txt_nom"));
 
         horizontalLayout_4->addWidget(txt_nom);
 
-        txt_prenom = new QLineEdit(widget);
+        txt_prenom = new QLineEdit(layoutWidget);
         txt_prenom->setObjectName(QStringLiteral("txt_prenom"));
 
         horizontalLayout_4->addWidget(txt_prenom);
@@ -220,42 +221,47 @@ public:
 
         verticalLayout_3->addLayout(horizontalLayout_4);
 
-        txt_nationalite = new QLineEdit(widget);
+        txt_nationalite = new QLineEdit(layoutWidget);
         txt_nationalite->setObjectName(QStringLiteral("txt_nationalite"));
 
         verticalLayout_3->addWidget(txt_nationalite);
 
-        txt_telephone = new QLineEdit(widget);
+        txt_telephone = new QLineEdit(layoutWidget);
         txt_telephone->setObjectName(QStringLiteral("txt_telephone"));
 
         verticalLayout_3->addWidget(txt_telephone);
 
-        txt_mail = new QLineEdit(widget);
+        txt_mail = new QLineEdit(layoutWidget);
         txt_mail->setObjectName(QStringLiteral("txt_mail"));
 
         verticalLayout_3->addWidget(txt_mail);
 
-        txt_numPassport = new QLineEdit(widget);
+        txt_numPassport = new QLineEdit(layoutWidget);
         txt_numPassport->setObjectName(QStringLiteral("txt_numPassport"));
 
         verticalLayout_3->addWidget(txt_numPassport);
 
         horizontalLayout_6 = new QHBoxLayout();
         horizontalLayout_6->setObjectName(QStringLiteral("horizontalLayout_6"));
-        txt_dateReservation = new QLineEdit(widget);
+        txt_dateReservation = new QLineEdit(layoutWidget);
         txt_dateReservation->setObjectName(QStringLiteral("txt_dateReservation"));
+        txt_dateReservation->setEnabled(false);
+        txt_dateReservation->setAutoFillBackground(false);
+        txt_dateReservation->setReadOnly(false);
 
         horizontalLayout_6->addWidget(txt_dateReservation);
 
-        txt_heureReservation = new QLineEdit(widget);
+        txt_heureReservation = new QLineEdit(layoutWidget);
         txt_heureReservation->setObjectName(QStringLiteral("txt_heureReservation"));
+        txt_heureReservation->setEnabled(false);
+        txt_heureReservation->setReadOnly(false);
 
         horizontalLayout_6->addWidget(txt_heureReservation);
 
 
         verticalLayout_3->addLayout(horizontalLayout_6);
 
-        txt_idVol = new QLineEdit(widget);
+        txt_idVol = new QLineEdit(layoutWidget);
         txt_idVol->setObjectName(QStringLiteral("txt_idVol"));
 
         verticalLayout_3->addWidget(txt_idVol);

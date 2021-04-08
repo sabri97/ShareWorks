@@ -29,13 +29,14 @@ void GestionVol_Dialog::on_save_clicked()
     QString heureArrivee = ui->txt_heureArrivee->text();
     QString aeroportDepart = ui->txt_aeroportDepart->text();
     QString aeroportArrivee = ui->txt_aeroportArrivee->text();
+    QString nombrePlace = ui->txt_nombrePlace->text();
 
     if(!conn.ConnOpen()){qDebug()<<("Failed to open database"); return;}
 
     //ConnOpen();
     QSqlQuery qry;
 
-    qry.prepare("insert into Vol (numVol,numAvion,dateDepart,heureDepart,dateArrivee,heureArrivee,aeroportDepart,aeroportArrivee) values('"+numVol+"','"+numAvion+"','"+dateDepart+"','"+heureDepart+"','"+dateArrivee+"','"+heureArrivee+"','"+aeroportDepart+"','"+aeroportArrivee+"')");
+    qry.prepare("insert into Vol (numVol,numAvion,dateDepart,heureDepart,dateArrivee,heureArrivee,aeroportDepart,aeroportArrivee,nombrePlace) values('"+numVol+"','"+numAvion+"','"+dateDepart+"','"+heureDepart+"','"+dateArrivee+"','"+heureArrivee+"','"+aeroportDepart+"','"+aeroportArrivee+"','"+nombrePlace+"')");
 
     if(qry.exec())
     {
@@ -61,13 +62,14 @@ void GestionVol_Dialog::on_update_clicked()
     QString heureArrivee = ui->txt_heureArrivee->text();
     QString aeroportDepart = ui->txt_aeroportDepart->text();
     QString aeroportArrivee = ui->txt_aeroportArrivee->text();
+    QString nombrePlace = ui->txt_nombrePlace->text();
 
     if(!conn.ConnOpen()){qDebug()<<("Failed to open database"); return;}
 
     //ConnOpen();
     QSqlQuery qry;
 
-    qry.prepare("update Vol set numVol='"+numVol+"',numAvion='"+numAvion+"',dateDepart='"+dateDepart+"',heureDepart='"+heureDepart+"',dateArrivee='"+dateArrivee+"',heureArrivee='"+heureArrivee+"',aeroportDepart='"+aeroportDepart+"',aeroportArrivee='"+aeroportArrivee+"' where idVol='"+idVol+"'");
+    qry.prepare("update Vol set numVol='"+numVol+"',numAvion='"+numAvion+"',dateDepart='"+dateDepart+"',heureDepart='"+heureDepart+"',dateArrivee='"+dateArrivee+"',heureArrivee='"+heureArrivee+"',aeroportDepart='"+aeroportDepart+"',aeroportArrivee='"+aeroportArrivee+"',nombrePlace='"+nombrePlace+"' where idVol='"+idVol+"'");
 
     if(qry.exec())
     {
@@ -148,7 +150,7 @@ void GestionVol_Dialog::on_tableView_activated(const QModelIndex &index)
              ui->txt_heureArrivee->setText(qry.value(6).toString());
              ui->txt_aeroportDepart->setText(qry.value(7).toString());
              ui->txt_aeroportArrivee->setText(qry.value(8).toString());
-
+             ui->txt_nombrePlace->setText(qry.value(9).toString());
            }
           conn.ConnClose();
 

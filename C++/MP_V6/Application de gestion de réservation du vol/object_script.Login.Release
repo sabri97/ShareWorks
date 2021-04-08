@@ -1,0 +1,15 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\admin_dialog.o
+./release\user.o
+./release\user_dialog.o
+./release\login.o
+./release\gestionvol_dialog.o
+./release\gestionvoyageur_dialog.o
+./release\moc_mainwindow.o
+./release\moc_admin_dialog.o
+./release\moc_user_dialog.o
+./release\moc_gestionvol_dialog.o
+./release\moc_gestionvoyageur_dialog.o
+);

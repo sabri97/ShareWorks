@@ -28,8 +28,18 @@ QT_BEGIN_NAMESPACE
 class Ui_GestionVol_Dialog
 {
 public:
-    QWidget *layoutWidget;
-    QHBoxLayout *horizontalLayout_3;
+    QTableView *tableView;
+    QWidget *layoutWidget_2;
+    QVBoxLayout *verticalLayout_4;
+    QHBoxLayout *horizontalLayout_5;
+    QPushButton *delete_2;
+    QPushButton *save;
+    QHBoxLayout *horizontalLayout_7;
+    QPushButton *load;
+    QPushButton *update;
+    QLabel *label;
+    QWidget *widget;
+    QHBoxLayout *horizontalLayout;
     QVBoxLayout *verticalLayout_2;
     QLabel *label_9;
     QLabel *label_3;
@@ -38,6 +48,7 @@ public:
     QLabel *label_6;
     QLabel *label_7;
     QLabel *label_8;
+    QLabel *label_10;
     QVBoxLayout *verticalLayout_3;
     QLineEdit *txt_idVol;
     QLineEdit *txt_numVol;
@@ -50,139 +61,13 @@ public:
     QLineEdit *txt_aeroportDepart;
     QLineEdit *txt_aeroportArrivee;
     QLineEdit *txt_numAvion;
-    QTableView *tableView;
-    QWidget *layoutWidget_2;
-    QVBoxLayout *verticalLayout_4;
-    QHBoxLayout *horizontalLayout_5;
-    QPushButton *delete_2;
-    QPushButton *save;
-    QHBoxLayout *horizontalLayout_7;
-    QPushButton *load;
-    QPushButton *update;
-    QLabel *label;
+    QLineEdit *txt_nombrePlace;
 
     void setupUi(QDialog *GestionVol_Dialog)
     {
         if (GestionVol_Dialog->objectName().isEmpty())
             GestionVol_Dialog->setObjectName(QStringLiteral("GestionVol_Dialog"));
         GestionVol_Dialog->resize(707, 497);
-        layoutWidget = new QWidget(GestionVol_Dialog);
-        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
-        layoutWidget->setGeometry(QRect(20, 70, 421, 191));
-        horizontalLayout_3 = new QHBoxLayout(layoutWidget);
-        horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
-        horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
-        verticalLayout_2 = new QVBoxLayout();
-        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
-        label_9 = new QLabel(layoutWidget);
-        label_9->setObjectName(QStringLiteral("label_9"));
-        QFont font;
-        font.setFamily(QStringLiteral("Segoe UI"));
-        font.setPointSize(10);
-        label_9->setFont(font);
-
-        verticalLayout_2->addWidget(label_9);
-
-        label_3 = new QLabel(layoutWidget);
-        label_3->setObjectName(QStringLiteral("label_3"));
-        label_3->setFont(font);
-
-        verticalLayout_2->addWidget(label_3);
-
-        label_4 = new QLabel(layoutWidget);
-        label_4->setObjectName(QStringLiteral("label_4"));
-        label_4->setFont(font);
-
-        verticalLayout_2->addWidget(label_4);
-
-        label_5 = new QLabel(layoutWidget);
-        label_5->setObjectName(QStringLiteral("label_5"));
-        label_5->setFont(font);
-
-        verticalLayout_2->addWidget(label_5);
-
-        label_6 = new QLabel(layoutWidget);
-        label_6->setObjectName(QStringLiteral("label_6"));
-        label_6->setFont(font);
-
-        verticalLayout_2->addWidget(label_6);
-
-        label_7 = new QLabel(layoutWidget);
-        label_7->setObjectName(QStringLiteral("label_7"));
-        label_7->setFont(font);
-
-        verticalLayout_2->addWidget(label_7);
-
-        label_8 = new QLabel(layoutWidget);
-        label_8->setObjectName(QStringLiteral("label_8"));
-        label_8->setFont(font);
-
-        verticalLayout_2->addWidget(label_8);
-
-
-        horizontalLayout_3->addLayout(verticalLayout_2);
-
-        verticalLayout_3 = new QVBoxLayout();
-        verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
-        txt_idVol = new QLineEdit(layoutWidget);
-        txt_idVol->setObjectName(QStringLiteral("txt_idVol"));
-        txt_idVol->setReadOnly(true);
-
-        verticalLayout_3->addWidget(txt_idVol);
-
-        txt_numVol = new QLineEdit(layoutWidget);
-        txt_numVol->setObjectName(QStringLiteral("txt_numVol"));
-
-        verticalLayout_3->addWidget(txt_numVol);
-
-        horizontalLayout_4 = new QHBoxLayout();
-        horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
-        txt_dateDepart = new QLineEdit(layoutWidget);
-        txt_dateDepart->setObjectName(QStringLiteral("txt_dateDepart"));
-
-        horizontalLayout_4->addWidget(txt_dateDepart);
-
-        txt_heureDepart = new QLineEdit(layoutWidget);
-        txt_heureDepart->setObjectName(QStringLiteral("txt_heureDepart"));
-
-        horizontalLayout_4->addWidget(txt_heureDepart);
-
-
-        verticalLayout_3->addLayout(horizontalLayout_4);
-
-        horizontalLayout_6 = new QHBoxLayout();
-        horizontalLayout_6->setObjectName(QStringLiteral("horizontalLayout_6"));
-        txt_dateArrivee = new QLineEdit(layoutWidget);
-        txt_dateArrivee->setObjectName(QStringLiteral("txt_dateArrivee"));
-
-        horizontalLayout_6->addWidget(txt_dateArrivee);
-
-        txt_heureArrivee = new QLineEdit(layoutWidget);
-        txt_heureArrivee->setObjectName(QStringLiteral("txt_heureArrivee"));
-
-        horizontalLayout_6->addWidget(txt_heureArrivee);
-
-
-        verticalLayout_3->addLayout(horizontalLayout_6);
-
-        txt_aeroportDepart = new QLineEdit(layoutWidget);
-        txt_aeroportDepart->setObjectName(QStringLiteral("txt_aeroportDepart"));
-
-        verticalLayout_3->addWidget(txt_aeroportDepart);
-
-        txt_aeroportArrivee = new QLineEdit(layoutWidget);
-        txt_aeroportArrivee->setObjectName(QStringLiteral("txt_aeroportArrivee"));
-
-        verticalLayout_3->addWidget(txt_aeroportArrivee);
-
-        txt_numAvion = new QLineEdit(layoutWidget);
-        txt_numAvion->setObjectName(QStringLiteral("txt_numAvion"));
-
-        verticalLayout_3->addWidget(txt_numAvion);
-
-
-        horizontalLayout_3->addLayout(verticalLayout_3);
-
         tableView = new QTableView(GestionVol_Dialog);
         tableView->setObjectName(QStringLiteral("tableView"));
         tableView->setGeometry(QRect(20, 270, 671, 151));
@@ -196,6 +81,9 @@ public:
         horizontalLayout_5->setObjectName(QStringLiteral("horizontalLayout_5"));
         delete_2 = new QPushButton(layoutWidget_2);
         delete_2->setObjectName(QStringLiteral("delete_2"));
+        QFont font;
+        font.setFamily(QStringLiteral("Segoe UI"));
+        font.setPointSize(10);
         delete_2->setFont(font);
         QIcon icon;
         icon.addFile(QStringLiteral("Data/Pictures/delete.png"), QSize(), QIcon::Normal, QIcon::Off);
@@ -250,6 +138,132 @@ public:
         label->setFont(font1);
         label->setLayoutDirection(Qt::LeftToRight);
         label->setAlignment(Qt::AlignCenter);
+        widget = new QWidget(GestionVol_Dialog);
+        widget->setObjectName(QStringLiteral("widget"));
+        widget->setGeometry(QRect(21, 71, 423, 191));
+        horizontalLayout = new QHBoxLayout(widget);
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        horizontalLayout->setContentsMargins(0, 0, 0, 0);
+        verticalLayout_2 = new QVBoxLayout();
+        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        label_9 = new QLabel(widget);
+        label_9->setObjectName(QStringLiteral("label_9"));
+        label_9->setFont(font);
+
+        verticalLayout_2->addWidget(label_9);
+
+        label_3 = new QLabel(widget);
+        label_3->setObjectName(QStringLiteral("label_3"));
+        label_3->setFont(font);
+
+        verticalLayout_2->addWidget(label_3);
+
+        label_4 = new QLabel(widget);
+        label_4->setObjectName(QStringLiteral("label_4"));
+        label_4->setFont(font);
+
+        verticalLayout_2->addWidget(label_4);
+
+        label_5 = new QLabel(widget);
+        label_5->setObjectName(QStringLiteral("label_5"));
+        label_5->setFont(font);
+
+        verticalLayout_2->addWidget(label_5);
+
+        label_6 = new QLabel(widget);
+        label_6->setObjectName(QStringLiteral("label_6"));
+        label_6->setFont(font);
+
+        verticalLayout_2->addWidget(label_6);
+
+        label_7 = new QLabel(widget);
+        label_7->setObjectName(QStringLiteral("label_7"));
+        label_7->setFont(font);
+
+        verticalLayout_2->addWidget(label_7);
+
+        label_8 = new QLabel(widget);
+        label_8->setObjectName(QStringLiteral("label_8"));
+        label_8->setFont(font);
+
+        verticalLayout_2->addWidget(label_8);
+
+        label_10 = new QLabel(widget);
+        label_10->setObjectName(QStringLiteral("label_10"));
+        label_10->setFont(font);
+
+        verticalLayout_2->addWidget(label_10);
+
+
+        horizontalLayout->addLayout(verticalLayout_2);
+
+        verticalLayout_3 = new QVBoxLayout();
+        verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
+        txt_idVol = new QLineEdit(widget);
+        txt_idVol->setObjectName(QStringLiteral("txt_idVol"));
+        txt_idVol->setEnabled(false);
+        txt_idVol->setReadOnly(true);
+
+        verticalLayout_3->addWidget(txt_idVol);
+
+        txt_numVol = new QLineEdit(widget);
+        txt_numVol->setObjectName(QStringLiteral("txt_numVol"));
+
+        verticalLayout_3->addWidget(txt_numVol);
+
+        horizontalLayout_4 = new QHBoxLayout();
+        horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
+        txt_dateDepart = new QLineEdit(widget);
+        txt_dateDepart->setObjectName(QStringLiteral("txt_dateDepart"));
+
+        horizontalLayout_4->addWidget(txt_dateDepart);
+
+        txt_heureDepart = new QLineEdit(widget);
+        txt_heureDepart->setObjectName(QStringLiteral("txt_heureDepart"));
+
+        horizontalLayout_4->addWidget(txt_heureDepart);
+
+
+        verticalLayout_3->addLayout(horizontalLayout_4);
+
+        horizontalLayout_6 = new QHBoxLayout();
+        horizontalLayout_6->setObjectName(QStringLiteral("horizontalLayout_6"));
+        txt_dateArrivee = new QLineEdit(widget);
+        txt_dateArrivee->setObjectName(QStringLiteral("txt_dateArrivee"));
+
+        horizontalLayout_6->addWidget(txt_dateArrivee);
+
+        txt_heureArrivee = new QLineEdit(widget);
+        txt_heureArrivee->setObjectName(QStringLiteral("txt_heureArrivee"));
+
+        horizontalLayout_6->addWidget(txt_heureArrivee);
+
+
+        verticalLayout_3->addLayout(horizontalLayout_6);
+
+        txt_aeroportDepart = new QLineEdit(widget);
+        txt_aeroportDepart->setObjectName(QStringLiteral("txt_aeroportDepart"));
+
+        verticalLayout_3->addWidget(txt_aeroportDepart);
+
+        txt_aeroportArrivee = new QLineEdit(widget);
+        txt_aeroportArrivee->setObjectName(QStringLiteral("txt_aeroportArrivee"));
+
+        verticalLayout_3->addWidget(txt_aeroportArrivee);
+
+        txt_numAvion = new QLineEdit(widget);
+        txt_numAvion->setObjectName(QStringLiteral("txt_numAvion"));
+
+        verticalLayout_3->addWidget(txt_numAvion);
+
+        txt_nombrePlace = new QLineEdit(widget);
+        txt_nombrePlace->setObjectName(QStringLiteral("txt_nombrePlace"));
+
+        verticalLayout_3->addWidget(txt_nombrePlace);
+
+
+        horizontalLayout->addLayout(verticalLayout_3);
+
 
         retranslateUi(GestionVol_Dialog);
 
@@ -259,6 +273,11 @@ public:
     void retranslateUi(QDialog *GestionVol_Dialog)
     {
         GestionVol_Dialog->setWindowTitle(QApplication::translate("GestionVol_Dialog", "Dialog", 0));
+        delete_2->setText(QApplication::translate("GestionVol_Dialog", "Delete", 0));
+        save->setText(QApplication::translate("GestionVol_Dialog", "Save", 0));
+        load->setText(QApplication::translate("GestionVol_Dialog", "Load", 0));
+        update->setText(QApplication::translate("GestionVol_Dialog", "Update", 0));
+        label->setText(QApplication::translate("GestionVol_Dialog", "Gestion de vol", 0));
         label_9->setText(QApplication::translate("GestionVol_Dialog", "ID Vol", 0));
         label_3->setText(QApplication::translate("GestionVol_Dialog", "Num\303\251ro vol                 ", 0));
         label_4->setText(QApplication::translate("GestionVol_Dialog", "Date et heure d\303\251part   ", 0));
@@ -266,12 +285,8 @@ public:
         label_6->setText(QApplication::translate("GestionVol_Dialog", "A\303\251roport d\303\251part          ", 0));
         label_7->setText(QApplication::translate("GestionVol_Dialog", "A\303\251roport d\342\200\231arriv\303\251e       ", 0));
         label_8->setText(QApplication::translate("GestionVol_Dialog", "Num\303\251ro avion            ", 0));
+        label_10->setText(QApplication::translate("GestionVol_Dialog", "Nombre de place", 0));
         txt_aeroportDepart->setText(QString());
-        delete_2->setText(QApplication::translate("GestionVol_Dialog", "Delete", 0));
-        save->setText(QApplication::translate("GestionVol_Dialog", "Save", 0));
-        load->setText(QApplication::translate("GestionVol_Dialog", "Load", 0));
-        update->setText(QApplication::translate("GestionVol_Dialog", "Update", 0));
-        label->setText(QApplication::translate("GestionVol_Dialog", "Gestion de vol", 0));
     } // retranslateUi
 
 };
