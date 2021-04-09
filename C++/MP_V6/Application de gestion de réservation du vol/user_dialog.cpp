@@ -22,6 +22,35 @@ User_Dialog::User_Dialog(QWidget *parent) :
     int h3 = ui->label_background2->height();
     ui ->label_background2->setPixmap(pix3.scaled(w3,h3,Qt::KeepAspectRatio));
 
+
+    if(!conn.ConnOpen())
+    {qDebug()<<("Failed to open database"); return;}
+
+    QSqlQueryModel * modale = new QSqlQueryModel();
+        //ConnOpen();
+        QSqlQuery * qry = new QSqlQuery(conn.DataBase);
+
+        qry->prepare("select aeroportDepart from Vol");
+
+        qry->exec();
+        modale->setQuery(*qry);
+        ui->aeroDep->setModel(modale);
+        conn.ConnClose();
+
+                if(!conn.ConnOpen())
+                {qDebug()<<("Failed to open database"); return;}
+
+                QSqlQueryModel * modalee = new QSqlQueryModel();
+                    //ConnOpen();
+                    QSqlQuery * qryy = new QSqlQuery(conn.DataBase);
+
+                    qryy->prepare("select aeroportArrivee from Vol");
+
+                    qryy->exec();
+                    modalee->setQuery(*qryy);
+                    ui->aeroArr->setModel(modalee);
+                    conn.ConnClose();
+
     if(!conn.ConnOpen())
             {
                ui->label_dbState->setText("database not connected");
@@ -75,8 +104,8 @@ void User_Dialog::on_Valid_clicked()
     LogIn conn;
     //QString datedeap = ui->datedep->text();
     //QString datearr = ui->datearr->text();
-    QString aerodep = ui->aerodep->text();
-    QString aeroarr = ui->aeroarr->text();
+    QString aerodep = ui->aeroDep->currentText();
+    QString aeroarr = ui->aeroArr->currentText();
     QString datedeap = ui->datedepEdit->text();
     QString datearr = ui->datearrEdit->text();
 
@@ -112,8 +141,6 @@ void User_Dialog::on_save_clicked()
     QString dateReservation = txt_date;
     QString heureReservation = txt_time;
     QString idVol = ui->txt_idVol->text();
-
-
 
     if(!conn.ConnOpen()){qDebug()<<("Failed to open database"); return;}
 

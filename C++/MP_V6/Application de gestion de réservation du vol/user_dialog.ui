@@ -35,7 +35,7 @@
     <enum>QTabWidget::Rounded</enum>
    </property>
    <property name="currentIndex">
-    <number>2</number>
+    <number>1</number>
    </property>
    <property name="iconSize">
     <size>
@@ -153,26 +153,6 @@
       </size>
      </property>
     </widget>
-    <widget class="QLineEdit" name="aerodep">
-     <property name="geometry">
-      <rect>
-       <x>270</x>
-       <y>130</y>
-       <width>121</width>
-       <height>31</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="aeroarr">
-     <property name="geometry">
-      <rect>
-       <x>80</x>
-       <y>130</y>
-       <width>121</width>
-       <height>31</height>
-      </rect>
-     </property>
-    </widget>
     <widget class="QDateEdit" name="datedepEdit">
      <property name="geometry">
       <rect>
@@ -266,6 +246,26 @@
        <width>45</width>
        <height>45</height>
       </size>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="aeroArr">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>130</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="aeroDep">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>130</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
      </property>
     </widget>
    </widget>
@@ -492,9 +492,6 @@
       </size>
      </property>
     </widget>
-    <zorder>layoutWidget</zorder>
-    <zorder>save</zorder>
-    <zorder>save</zorder>
    </widget>
    <widget class="QWidget" name="tab_3">
     <attribute name="title">

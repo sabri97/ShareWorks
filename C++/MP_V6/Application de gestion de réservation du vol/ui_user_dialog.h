@@ -13,6 +13,7 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QComboBox>
 #include <QtWidgets/QDateEdit>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHBoxLayout>
@@ -38,8 +39,6 @@ public:
     QLabel *label_dbState;
     QTableView *tableView;
     QPushButton *Valid;
-    QLineEdit *aerodep;
-    QLineEdit *aeroarr;
     QDateEdit *datedepEdit;
     QDateEdit *datearrEdit;
     QLabel *label_10;
@@ -47,6 +46,8 @@ public:
     QLabel *label_12;
     QLabel *label_13;
     QPushButton *load;
+    QComboBox *aeroArr;
+    QComboBox *aeroDep;
     QWidget *tab_2;
     QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
@@ -133,12 +134,6 @@ public:
         icon.addFile(QStringLiteral("Data/Pictures/load.png"), QSize(), QIcon::Normal, QIcon::Off);
         Valid->setIcon(icon);
         Valid->setIconSize(QSize(45, 45));
-        aerodep = new QLineEdit(tab_4);
-        aerodep->setObjectName(QStringLiteral("aerodep"));
-        aerodep->setGeometry(QRect(270, 130, 121, 31));
-        aeroarr = new QLineEdit(tab_4);
-        aeroarr->setObjectName(QStringLiteral("aeroarr"));
-        aeroarr->setGeometry(QRect(80, 130, 121, 31));
         datedepEdit = new QDateEdit(tab_4);
         datedepEdit->setObjectName(QStringLiteral("datedepEdit"));
         datedepEdit->setGeometry(QRect(80, 50, 110, 22));
@@ -162,6 +157,12 @@ public:
         load->setGeometry(QRect(10, 380, 111, 51));
         load->setIcon(icon);
         load->setIconSize(QSize(45, 45));
+        aeroArr = new QComboBox(tab_4);
+        aeroArr->setObjectName(QStringLiteral("aeroArr"));
+        aeroArr->setGeometry(QRect(70, 130, 141, 31));
+        aeroDep = new QComboBox(tab_4);
+        aeroDep->setObjectName(QStringLiteral("aeroDep"));
+        aeroDep->setGeometry(QRect(280, 130, 141, 31));
         tabWidget->addTab(tab_4, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QStringLiteral("tab_2"));
@@ -308,9 +309,6 @@ public:
         save->setIcon(icon1);
         save->setIconSize(QSize(45, 45));
         tabWidget->addTab(tab_2, QString());
-        layoutWidget->raise();
-        save->raise();
-        save->raise();
         tab_3 = new QWidget();
         tab_3->setObjectName(QStringLiteral("tab_3"));
         label = new QLabel(tab_3);
@@ -336,7 +334,7 @@ public:
 
         retranslateUi(User_Dialog);
 
-        tabWidget->setCurrentIndex(2);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(User_Dialog);
