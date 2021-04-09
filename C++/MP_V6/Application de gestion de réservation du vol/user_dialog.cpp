@@ -2,6 +2,10 @@
 #include "ui_user_dialog.h"
 #include<QDateTime>
 
+
+extern QString txt_time;
+extern QString txt_date;
+
 User_Dialog::User_Dialog(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::User_Dialog)
@@ -37,3 +41,97 @@ User_Dialog::~User_Dialog()
 {
     delete ui;
 }
+
+void User_Dialog::on_load_clicked()
+{
+    LogIn conn;
+
+    if(!conn.ConnOpen())
+    {qDebug()<<("Failed to open database"); return;}
+
+    QSqlQueryModel * modale = new QSqlQueryModel();
+        //ConnOpen();
+        QSqlQuery * qry = new QSqlQuery(conn.DataBase);
+
+        qry->prepare("select * from Vol");
+
+        qry->exec();
+        modale->setQuery(*qry);
+        ui->tableView->setModel(modale);
+        conn.ConnClose();
+
+        qDebug()<< (modale->rowCount());
+}
+
+void User_Dialog::on_advancedSearch_clicked()
+{
+    /*userAdvSearch = new user_advanced_search(this);
+    userAdvSearch->show();*/
+}
+
+
+void User_Dialog::on_Valid_clicked()
+{
+    LogIn conn;
+    //QString datedeap = ui->datedep->text();
+    //QString datearr = ui->datearr->text();
+    QString aerodep = ui->aerodep->text();
+    QString aeroarr = ui->aeroarr->text();
+    QString datedeap = ui->datedepEdit->text();
+    QString datearr = ui->datearrEdit->text();
+
+
+    if(!conn.ConnOpen())
+    {qDebug()<<("Failed to open database"); return;}
+
+    QSqlQueryModel * modale = new QSqlQueryModel();
+        //ConnOpen();
+        QSqlQuery * qry = new QSqlQuery(conn.DataBase);
+        qry->prepare("select * from Vol where dateDepart='"+datedeap+"' and dateArrivee='"+datearr+"' and aeroportDepart='"+aerodep+"' and aeroportArrivee='"+aeroarr+"'");
+
+        qry->exec();
+        modale->setQuery(*qry);
+        ui->tableView->setModel(modale);
+        conn.ConnClose();
+
+        qDebug()<< (modale->rowCount());
+}
+
+
+
+void User_Dialog::on_save_clicked()
+{
+    LogIn conn;
+    QString idVoyageur = ui->txt_idVoyageur->text();
+    QString nom = ui->txt_nom->text();
+    QString prenom = ui->txt_prenom->text();
+    QString nationalite = ui->txt_nationalite->text();
+    QString telephone = ui->txt_telephone->text();
+    QString mail = ui->txt_mail->text();
+    QString numPassport = ui->txt_numPassport->text();
+    QString dateReservation = txt_date;
+    QString heureReservation = txt_time;
+    QString idVol = ui->txt_idVol->text();
+
+
+
+    if(!conn.ConnOpen()){qDebug()<<("Failed to open database"); return;}
+
+    //ConnOpen();
+    QSqlQuery qry;
+
+
+    qry.prepare("insert into Voyageur (nom,prenom,nationalite,telephone,mail,numPassport,dateReservation,heureReservation,idVol) values('"+nom+"','"+prenom+"','"+nationalite+"','"+telephone+"','"+mail+"','"+numPassport+"','"+dateReservation+"','"+heureReservation+"','"+idVol+"')");
+
+    if(qry.exec())
+    {
+        QMessageBox :: critical(this, tr("Save"),tr("Saved"));
+        conn.ConnClose();
+    }
+    else
+    {
+        QMessageBox :: critical(this, tr("Error"),qry.lastError().text());
+    }
+}
+
+
