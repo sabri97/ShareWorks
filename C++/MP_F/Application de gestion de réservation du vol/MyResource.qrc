@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>Data/Pictures/2155719.jpg</file>
+        <file>Data/Pictures/aboutIcone.png</file>
+        <file>Data/Pictures/consultingIcone.jpg</file>
+        <file>Data/Pictures/inscription.png</file>
+        <file>Data/Pictures/mangeIicone.png</file>
+        <file>Data/Pictures/mangeUser.png</file>
+        <file>Data/Pictures/welcomeIcone.jpg</file>
+    </qresource>
+</RCC>

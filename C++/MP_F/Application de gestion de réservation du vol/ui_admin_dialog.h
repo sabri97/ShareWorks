@@ -43,14 +43,17 @@ public:
     QHBoxLayout *horizontalLayout;
     QPushButton *pushButton;
     QPushButton *pushButton_2;
+    QLabel *bguser;
     QWidget *tab_4;
     QLabel *label_dbState;
-    QWidget *widget;
+    QLabel *bguser_2;
+    QWidget *layoutWidget_2;
     QVBoxLayout *verticalLayout_2;
     QPushButton *gestionVol;
     QPushButton *gestionVoyageur;
     QWidget *tab_3;
     QLabel *label;
+    QLabel *bguser_3;
     QLabel *label_background2;
     QGroupBox *groupBox;
     QLabel *label_time;
@@ -61,17 +64,20 @@ public:
     {
         if (Admin_Dialog->objectName().isEmpty())
             Admin_Dialog->setObjectName(QStringLiteral("Admin_Dialog"));
-        Admin_Dialog->resize(806, 623);
+        Admin_Dialog->resize(756, 492);
         tabWidget = new QTabWidget(Admin_Dialog);
         tabWidget->setObjectName(QStringLiteral("tabWidget"));
-        tabWidget->setGeometry(QRect(30, 20, 701, 411));
+        tabWidget->setGeometry(QRect(30, 20, 691, 411));
         QFont font;
-        font.setFamily(QStringLiteral("Segoe UI"));
-        font.setPointSize(9);
+        font.setFamily(QStringLiteral("High Tower Text"));
+        font.setPointSize(16);
+        font.setBold(true);
+        font.setItalic(true);
+        font.setWeight(75);
         tabWidget->setFont(font);
         tabWidget->setAutoFillBackground(false);
         tabWidget->setTabShape(QTabWidget::Rounded);
-        tabWidget->setIconSize(QSize(20, 20));
+        tabWidget->setIconSize(QSize(40, 40));
         tab = new QWidget();
         tab->setObjectName(QStringLiteral("tab"));
         horizontalLayout_2 = new QHBoxLayout(tab);
@@ -82,7 +88,9 @@ public:
 
         horizontalLayout_2->addWidget(label_bienvenue_admin);
 
-        tabWidget->addTab(tab, QString());
+        QIcon icon;
+        icon.addFile(QStringLiteral(":/new/prefix1/Data/Pictures/welcomeIcone.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        tabWidget->addTab(tab, icon, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QStringLiteral("tab_2"));
         label_login = new QLabel(tab_2);
@@ -96,8 +104,8 @@ public:
         label_2->setObjectName(QStringLiteral("label_2"));
         label_2->setGeometry(QRect(410, 20, 231, 61));
         QFont font2;
-        font2.setFamily(QStringLiteral("Segoe UI"));
-        font2.setPointSize(11);
+        font2.setFamily(QStringLiteral("High Tower Text"));
+        font2.setPointSize(16);
         font2.setBold(false);
         font2.setWeight(50);
         label_2->setFont(font2);
@@ -119,8 +127,8 @@ public:
         pushButton = new QPushButton(layoutWidget);
         pushButton->setObjectName(QStringLiteral("pushButton"));
         QFont font3;
-        font3.setFamily(QStringLiteral("Segoe UI"));
-        font3.setPointSize(12);
+        font3.setFamily(QStringLiteral("High Tower Text"));
+        font3.setPointSize(16);
         pushButton->setFont(font3);
 
         horizontalLayout->addWidget(pushButton);
@@ -134,7 +142,16 @@ public:
 
         verticalLayout->addLayout(horizontalLayout);
 
-        tabWidget->addTab(tab_2, QString());
+        bguser = new QLabel(tab_2);
+        bguser->setObjectName(QStringLiteral("bguser"));
+        bguser->setGeometry(QRect(0, 0, 701, 461));
+        QIcon icon1;
+        icon1.addFile(QStringLiteral(":/new/prefix1/Data/Pictures/mangeUser.png"), QSize(), QIcon::Normal, QIcon::On);
+        tabWidget->addTab(tab_2, icon1, QString());
+        bguser->raise();
+        label_login->raise();
+        label_2->raise();
+        layoutWidget->raise();
         tab_4 = new QWidget();
         tab_4->setObjectName(QStringLiteral("tab_4"));
         label_dbState = new QLabel(tab_4);
@@ -153,34 +170,45 @@ public:
         font4.setFamily(QStringLiteral("Segoe UI Light"));
         font4.setPointSize(10);
         label_dbState->setFont(font4);
-        widget = new QWidget(tab_4);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(241, 106, 103, 54));
-        verticalLayout_2 = new QVBoxLayout(widget);
+        bguser_2 = new QLabel(tab_4);
+        bguser_2->setObjectName(QStringLiteral("bguser_2"));
+        bguser_2->setGeometry(QRect(0, 0, 701, 461));
+        layoutWidget_2 = new QWidget(tab_4);
+        layoutWidget_2->setObjectName(QStringLiteral("layoutWidget_2"));
+        layoutWidget_2->setGeometry(QRect(230, 140, 205, 81));
+        verticalLayout_2 = new QVBoxLayout(layoutWidget_2);
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
         verticalLayout_2->setContentsMargins(0, 0, 0, 0);
-        gestionVol = new QPushButton(widget);
+        gestionVol = new QPushButton(layoutWidget_2);
         gestionVol->setObjectName(QStringLiteral("gestionVol"));
 
         verticalLayout_2->addWidget(gestionVol);
 
-        gestionVoyageur = new QPushButton(widget);
+        gestionVoyageur = new QPushButton(layoutWidget_2);
         gestionVoyageur->setObjectName(QStringLiteral("gestionVoyageur"));
 
         verticalLayout_2->addWidget(gestionVoyageur);
 
-        tabWidget->addTab(tab_4, QString());
-        layoutWidget->raise();
+        tabWidget->addTab(tab_4, icon1, QString());
+        bguser_2->raise();
         label_dbState->raise();
+        layoutWidget_2->raise();
         tab_3 = new QWidget();
         tab_3->setObjectName(QStringLiteral("tab_3"));
         label = new QLabel(tab_3);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(20, 10, 480, 104));
-        tabWidget->addTab(tab_3, QString());
+        label->setGeometry(QRect(10, 10, 480, 104));
+        bguser_3 = new QLabel(tab_3);
+        bguser_3->setObjectName(QStringLiteral("bguser_3"));
+        bguser_3->setGeometry(QRect(0, 0, 701, 461));
+        QIcon icon2;
+        icon2.addFile(QStringLiteral(":/new/prefix1/Data/Pictures/aboutIcone.png"), QSize(), QIcon::Normal, QIcon::On);
+        tabWidget->addTab(tab_3, icon2, QString());
+        bguser_3->raise();
+        label->raise();
         label_background2 = new QLabel(Admin_Dialog);
         label_background2->setObjectName(QStringLiteral("label_background2"));
-        label_background2->setGeometry(QRect(5, 0, 960, 501));
+        label_background2->setGeometry(QRect(-6, 0, 971, 501));
         label_background2->setFont(font1);
         label_background2->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop);
         groupBox = new QGroupBox(Admin_Dialog);
@@ -222,8 +250,6 @@ public:
         frame->setGeometry(QRect(10, 10, 741, 481));
         frame->setFrameShape(QFrame::StyledPanel);
         frame->setFrameShadow(QFrame::Raised);
-        tabWidget->raise();
-        tabWidget->raise();
         label_background2->raise();
         frame->raise();
         tabWidget->raise();
@@ -231,7 +257,7 @@ public:
 
         retranslateUi(Admin_Dialog);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(3);
 
 
         QMetaObject::connectSlotsByName(Admin_Dialog);
@@ -241,18 +267,20 @@ public:
     {
         Admin_Dialog->setWindowTitle(QApplication::translate("Admin_Dialog", "Application de gestion de r\303\251servation du vol", 0));
         label_bienvenue_admin->setText(QString());
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("Admin_Dialog", "Bienvenue", 0));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("Admin_Dialog", "Welcome", 0));
         label_login->setText(QString());
         label_2->setText(QApplication::translate("Admin_Dialog", "Click on \"Read\" to open the file,\n"
 "or click on \"Write\" to modify it.\n"
 "", 0));
         pushButton->setText(QApplication::translate("Admin_Dialog", "Write", 0));
         pushButton_2->setText(QApplication::translate("Admin_Dialog", "Read", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("Admin_Dialog", "G\303\251rer les utilisateurs", 0));
+        bguser->setText(QApplication::translate("Admin_Dialog", "TextLabel", 0));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("Admin_Dialog", "Manage users", 0));
         label_dbState->setText(QApplication::translate("Admin_Dialog", "TextLabel", 0));
-        gestionVol->setText(QApplication::translate("Admin_Dialog", "Gestion vol", 0));
-        gestionVoyageur->setText(QApplication::translate("Admin_Dialog", "Gestion Voyageur", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("Admin_Dialog", "G\303\251rer les r\303\251servations", 0));
+        bguser_2->setText(QApplication::translate("Admin_Dialog", "TextLabel", 0));
+        gestionVol->setText(QApplication::translate("Admin_Dialog", "Flight management", 0));
+        gestionVoyageur->setText(QApplication::translate("Admin_Dialog", "Traveler Management", 0));
+        tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("Admin_Dialog", "Manage reservations", 0));
         label->setText(QApplication::translate("Admin_Dialog", "Sujet 7 : Application de gestion de r\303\251servation du vol\n"
 "L\342\200\231objectif est de d\303\251velopper une application graphique permettant de g\303\251rer les r\303\251servations des vols\n"
 "au niveau d\342\200\231une agence de voyage. L\342\200\231utilisateur de cette application peut :\n"
@@ -261,7 +289,8 @@ public:
 "\357\202\267 Rechercher et consulter des vols existant par date d\303\251part, destination ..., etc.\n"
 "\357\202\267 Ajouter un voyageur et lui r\303\251server un vol\n"
 "\357\202\267 Il peut aussi modifier ou annuler un vol.", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("Admin_Dialog", "A propos", 0));
+        bguser_3->setText(QApplication::translate("Admin_Dialog", "TextLabel", 0));
+        tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("Admin_Dialog", "About", 0));
         label_background2->setText(QApplication::translate("Admin_Dialog", "TextLabel", 0));
         groupBox->setTitle(QString());
         label_time->setText(QApplication::translate("Admin_Dialog", "TextLabel", 0));

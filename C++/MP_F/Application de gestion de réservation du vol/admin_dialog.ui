@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>806</width>
-    <height>623</height>
+    <width>756</width>
+    <height>492</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,14 +18,17 @@
     <rect>
      <x>30</x>
      <y>20</y>
-     <width>701</width>
+     <width>691</width>
      <height>411</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <family>Segoe UI</family>
-     <pointsize>9</pointsize>
+     <family>High Tower Text</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <italic>true</italic>
+     <bold>true</bold>
     </font>
    </property>
    <property name="autoFillBackground">
@@ -35,17 +38,21 @@
     <enum>QTabWidget::Rounded</enum>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>3</number>
    </property>
    <property name="iconSize">
     <size>
-     <width>20</width>
-     <height>20</height>
+     <width>40</width>
+     <height>40</height>
     </size>
    </property>
    <widget class="QWidget" name="tab">
+    <attribute name="icon">
+     <iconset resource="MyResource.qrc">
+      <normaloff>:/new/prefix1/Data/Pictures/welcomeIcone.jpg</normaloff>:/new/prefix1/Data/Pictures/welcomeIcone.jpg</iconset>
+    </attribute>
     <attribute name="title">
-     <string>Bienvenue</string>
+     <string>Welcome</string>
     </attribute>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
      <item>
@@ -61,8 +68,13 @@
     </layout>
    </widget>
    <widget class="QWidget" name="tab_2">
+    <attribute name="icon">
+     <iconset>
+      <normalon>:/new/prefix1/Data/Pictures/mangeUser.png</normalon>
+     </iconset>
+    </attribute>
     <attribute name="title">
-     <string>Gérer les utilisateurs</string>
+     <string>Manage users</string>
     </attribute>
     <widget class="QLabel" name="label_login">
      <property name="geometry">
@@ -96,8 +108,8 @@
      </property>
      <property name="font">
       <font>
-       <family>Segoe UI</family>
-       <pointsize>11</pointsize>
+       <family>High Tower Text</family>
+       <pointsize>16</pointsize>
        <weight>50</weight>
        <bold>false</bold>
       </font>
@@ -133,8 +145,8 @@ or click on &quot;Write&quot; to modify it.
          <widget class="QPushButton" name="pushButton">
           <property name="font">
            <font>
-            <family>Segoe UI</family>
-            <pointsize>12</pointsize>
+            <family>High Tower Text</family>
+            <pointsize>16</pointsize>
            </font>
           </property>
           <property name="text">
@@ -146,8 +158,8 @@ or click on &quot;Write&quot; to modify it.
          <widget class="QPushButton" name="pushButton_2">
           <property name="font">
            <font>
-            <family>Segoe UI</family>
-            <pointsize>12</pointsize>
+            <family>High Tower Text</family>
+            <pointsize>16</pointsize>
            </font>
           </property>
           <property name="text">
@@ -159,10 +171,32 @@ or click on &quot;Write&quot; to modify it.
       </item>
      </layout>
     </widget>
+    <widget class="QLabel" name="bguser">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>701</width>
+       <height>461</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <zorder>bguser</zorder>
+    <zorder>label_login</zorder>
+    <zorder>label_2</zorder>
+    <zorder>layoutWidget</zorder>
    </widget>
    <widget class="QWidget" name="tab_4">
+    <attribute name="icon">
+     <iconset>
+      <normalon>:/new/prefix1/Data/Pictures/mangeUser.png</normalon>
+     </iconset>
+    </attribute>
     <attribute name="title">
-     <string>Gérer les réservations</string>
+     <string>Manage reservations</string>
     </attribute>
     <widget class="QLabel" name="label_dbState">
      <property name="geometry">
@@ -220,43 +254,62 @@ or click on &quot;Write&quot; to modify it.
       <string>TextLabel</string>
      </property>
     </widget>
-    <widget class="QWidget" name="">
+    <widget class="QLabel" name="bguser_2">
      <property name="geometry">
       <rect>
-       <x>241</x>
-       <y>106</y>
-       <width>103</width>
-       <height>54</height>
+       <x>0</x>
+       <y>0</y>
+       <width>701</width>
+       <height>461</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>140</y>
+       <width>205</width>
+       <height>81</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
        <widget class="QPushButton" name="gestionVol">
         <property name="text">
-         <string>Gestion vol</string>
+         <string>Flight management</string>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QPushButton" name="gestionVoyageur">
         <property name="text">
-         <string>Gestion Voyageur</string>
+         <string>Traveler Management</string>
         </property>
        </widget>
       </item>
      </layout>
     </widget>
-    <zorder>layoutWidget</zorder>
+    <zorder>bguser_2</zorder>
     <zorder>label_dbState</zorder>
+    <zorder>layoutWidget_2</zorder>
    </widget>
    <widget class="QWidget" name="tab_3">
+    <attribute name="icon">
+     <iconset>
+      <normalon>:/new/prefix1/Data/Pictures/aboutIcone.png</normalon>
+     </iconset>
+    </attribute>
     <attribute name="title">
-     <string>A propos</string>
+     <string>About</string>
     </attribute>
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>20</x>
+       <x>10</x>
        <y>10</y>
        <width>480</width>
        <height>104</height>
@@ -273,14 +326,29 @@ aéroport d’arrivée, numéro avion)
  Il peut aussi modifier ou annuler un vol.</string>
      </property>
     </widget>
+    <widget class="QLabel" name="bguser_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>701</width>
+       <height>461</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <zorder>bguser_3</zorder>
+    <zorder>label</zorder>
    </widget>
   </widget>
   <widget class="QLabel" name="label_background2">
    <property name="geometry">
     <rect>
-     <x>5</x>
+     <x>-6</x>
      <y>0</y>
-     <width>960</width>
+     <width>971</width>
      <height>501</height>
     </rect>
    </property>
@@ -439,14 +507,14 @@ aéroport d’arrivée, numéro avion)
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
-   <zorder>tabWidget</zorder>
-   <zorder>tabWidget</zorder>
   </widget>
   <zorder>label_background2</zorder>
   <zorder>frame</zorder>
   <zorder>tabWidget</zorder>
   <zorder>groupBox</zorder>
  </widget>
- <resources/>
+ <resources>
+  <include location="MyResource.qrc"/>
+ </resources>
  <connections/>
 </ui>

@@ -34,3 +34,6 @@ FORMS    += mainwindow.ui \
     user_dialog.ui \
     gestionvol_dialog.ui \
     gestionvoyageur_dialog.ui
+
+RESOURCES += \
+    MyResource.qrc

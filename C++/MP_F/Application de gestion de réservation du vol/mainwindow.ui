@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>320</width>
+    <width>322</width>
     <height>603</height>
    </rect>
   </property>
@@ -221,9 +221,9 @@
     <widget class="QLabel" name="label_pic">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>-60</x>
        <y>20</y>
-       <width>281</width>
+       <width>421</width>
        <height>191</height>
       </rect>
      </property>
@@ -241,6 +241,7 @@
     </widget>
     <zorder>label_pic</zorder>
     <zorder>groupBox</zorder>
+    <zorder>label_3</zorder>
    </widget>
    <widget class="QLabel" name="label_background">
     <property name="geometry">
@@ -248,7 +249,7 @@
       <x>0</x>
       <y>-10</y>
       <width>481</width>
-      <height>571</height>
+      <height>581</height>
      </rect>
     </property>
     <property name="text">
@@ -303,10 +304,10 @@
     </property>
     <property name="font">
      <font>
-      <family>Segoe UI Light</family>
-      <pointsize>14</pointsize>
+      <family>High Tower Text</family>
+      <pointsize>16</pointsize>
       <weight>50</weight>
-      <italic>false</italic>
+      <italic>true</italic>
       <bold>false</bold>
       <underline>false</underline>
       <strikeout>false</strikeout>
@@ -330,7 +331,7 @@ du vol</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>320</width>
+     <width>322</width>
      <height>21</height>
     </rect>
    </property>

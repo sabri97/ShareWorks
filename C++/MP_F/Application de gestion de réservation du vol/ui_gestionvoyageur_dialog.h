@@ -71,7 +71,7 @@ public:
     {
         if (GestionVoyageur_Dialog->objectName().isEmpty())
             GestionVoyageur_Dialog->setObjectName(QStringLiteral("GestionVoyageur_Dialog"));
-        GestionVoyageur_Dialog->resize(695, 501);
+        GestionVoyageur_Dialog->resize(695, 538);
         QPalette palette;
         QBrush brush(QColor(255, 255, 255, 255));
         brush.setStyle(Qt::SolidPattern);
@@ -95,17 +95,18 @@ public:
         palette1.setBrush(QPalette::Disabled, QPalette::WindowText, brush2);
         label->setPalette(palette1);
         QFont font;
-        font.setFamily(QStringLiteral("Comic Sans MS"));
-        font.setPointSize(20);
+        font.setFamily(QStringLiteral("High Tower Text"));
+        font.setPointSize(22);
+        font.setItalic(true);
         label->setFont(font);
         label->setLayoutDirection(Qt::LeftToRight);
         label->setAlignment(Qt::AlignCenter);
         tableView = new QTableView(GestionVoyageur_Dialog);
         tableView->setObjectName(QStringLiteral("tableView"));
-        tableView->setGeometry(QRect(10, 340, 671, 150));
+        tableView->setGeometry(QRect(10, 380, 671, 150));
         layoutWidget_2 = new QWidget(GestionVoyageur_Dialog);
         layoutWidget_2->setObjectName(QStringLiteral("layoutWidget_2"));
-        layoutWidget_2->setGeometry(QRect(440, 220, 241, 111));
+        layoutWidget_2->setGeometry(QRect(440, 250, 241, 118));
         verticalLayout_4 = new QVBoxLayout(layoutWidget_2);
         verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
         verticalLayout_4->setContentsMargins(0, 0, 0, 0);
@@ -114,8 +115,9 @@ public:
         delete_2 = new QPushButton(layoutWidget_2);
         delete_2->setObjectName(QStringLiteral("delete_2"));
         QFont font1;
-        font1.setFamily(QStringLiteral("Segoe UI"));
-        font1.setPointSize(10);
+        font1.setFamily(QStringLiteral("High Tower Text"));
+        font1.setPointSize(16);
+        font1.setItalic(true);
         delete_2->setFont(font1);
         QIcon icon;
         icon.addFile(QStringLiteral("Data/Pictures/delete.png"), QSize(), QIcon::Normal, QIcon::Off);
@@ -141,6 +143,7 @@ public:
         horizontalLayout_7->setObjectName(QStringLiteral("horizontalLayout_7"));
         load = new QPushButton(layoutWidget_2);
         load->setObjectName(QStringLiteral("load"));
+        load->setFont(font1);
         QIcon icon2;
         icon2.addFile(QStringLiteral("Data/Pictures/load.png"), QSize(), QIcon::Normal, QIcon::Off);
         load->setIcon(icon2);
@@ -166,10 +169,10 @@ public:
         label_gif1->setGeometry(QRect(480, 50, 151, 151));
         groupBox = new QGroupBox(GestionVoyageur_Dialog);
         groupBox->setObjectName(QStringLiteral("groupBox"));
-        groupBox->setGeometry(QRect(10, 90, 421, 241));
+        groupBox->setGeometry(QRect(10, 60, 421, 311));
         layoutWidget = new QWidget(groupBox);
         layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
-        layoutWidget->setGeometry(QRect(10, 19, 401, 211));
+        layoutWidget->setGeometry(QRect(10, 19, 401, 276));
         horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
@@ -239,11 +242,13 @@ public:
         horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
         txt_nom = new QLineEdit(layoutWidget);
         txt_nom->setObjectName(QStringLiteral("txt_nom"));
+        txt_nom->setFont(font1);
 
         horizontalLayout_4->addWidget(txt_nom);
 
         txt_prenom = new QLineEdit(layoutWidget);
         txt_prenom->setObjectName(QStringLiteral("txt_prenom"));
+        txt_prenom->setFont(font1);
 
         horizontalLayout_4->addWidget(txt_prenom);
 
@@ -252,21 +257,25 @@ public:
 
         txt_nationalite = new QLineEdit(layoutWidget);
         txt_nationalite->setObjectName(QStringLiteral("txt_nationalite"));
+        txt_nationalite->setFont(font1);
 
         verticalLayout_3->addWidget(txt_nationalite);
 
         txt_telephone = new QLineEdit(layoutWidget);
         txt_telephone->setObjectName(QStringLiteral("txt_telephone"));
+        txt_telephone->setFont(font1);
 
         verticalLayout_3->addWidget(txt_telephone);
 
         txt_mail = new QLineEdit(layoutWidget);
         txt_mail->setObjectName(QStringLiteral("txt_mail"));
+        txt_mail->setFont(font1);
 
         verticalLayout_3->addWidget(txt_mail);
 
         txt_numPassport = new QLineEdit(layoutWidget);
         txt_numPassport->setObjectName(QStringLiteral("txt_numPassport"));
+        txt_numPassport->setFont(font1);
 
         verticalLayout_3->addWidget(txt_numPassport);
 
@@ -292,6 +301,7 @@ public:
 
         txt_idVol = new QLineEdit(layoutWidget);
         txt_idVol->setObjectName(QStringLiteral("txt_idVol"));
+        txt_idVol->setFont(font1);
 
         verticalLayout_3->addWidget(txt_idVol);
 
@@ -300,7 +310,7 @@ public:
 
         label_10 = new QLabel(GestionVoyageur_Dialog);
         label_10->setObjectName(QStringLiteral("label_10"));
-        label_10->setGeometry(QRect(0, 0, 721, 511));
+        label_10->setGeometry(QRect(0, 0, 721, 541));
         label_10->setPixmap(QPixmap(QString::fromUtf8("Data/Pictures/2155719.jpg")));
         label_10->raise();
         label->raise();
@@ -317,21 +327,21 @@ public:
     void retranslateUi(QDialog *GestionVoyageur_Dialog)
     {
         GestionVoyageur_Dialog->setWindowTitle(QApplication::translate("GestionVoyageur_Dialog", "Dialog", 0));
-        label->setText(QApplication::translate("GestionVoyageur_Dialog", "Gestion de voyageur", 0));
+        label->setText(QApplication::translate("GestionVoyageur_Dialog", "Traveler management", 0));
         delete_2->setText(QApplication::translate("GestionVoyageur_Dialog", "Delete", 0));
         save->setText(QApplication::translate("GestionVoyageur_Dialog", "Save", 0));
         load->setText(QApplication::translate("GestionVoyageur_Dialog", "Load", 0));
         update->setText(QApplication::translate("GestionVoyageur_Dialog", "Update", 0));
         label_gif1->setText(QString());
         groupBox->setTitle(QApplication::translate("GestionVoyageur_Dialog", "GroupBox", 0));
-        label_9->setText(QApplication::translate("GestionVoyageur_Dialog", "ID Voyageur", 0));
-        label_6->setText(QApplication::translate("GestionVoyageur_Dialog", "Nom et Pr\303\251nom", 0));
-        label_3->setText(QApplication::translate("GestionVoyageur_Dialog", "Nationalit\303\251", 0));
-        label_5->setText(QApplication::translate("GestionVoyageur_Dialog", "Num\303\251ro de t\303\251l\303\251phone", 0));
+        label_9->setText(QApplication::translate("GestionVoyageur_Dialog", "Traveler ID", 0));
+        label_6->setText(QApplication::translate("GestionVoyageur_Dialog", "Last name and first name", 0));
+        label_3->setText(QApplication::translate("GestionVoyageur_Dialog", "Nationality", 0));
+        label_5->setText(QApplication::translate("GestionVoyageur_Dialog", "Phone number", 0));
         label_7->setText(QApplication::translate("GestionVoyageur_Dialog", "E-mail", 0));
-        label_8->setText(QApplication::translate("GestionVoyageur_Dialog", "Num\303\251ro de passport", 0));
-        label_4->setText(QApplication::translate("GestionVoyageur_Dialog", "Date et heure de reservation", 0));
-        label_2->setText(QApplication::translate("GestionVoyageur_Dialog", "ID Vol", 0));
+        label_8->setText(QApplication::translate("GestionVoyageur_Dialog", "Passport number", 0));
+        label_4->setText(QApplication::translate("GestionVoyageur_Dialog", "Date and time of reservation", 0));
+        label_2->setText(QApplication::translate("GestionVoyageur_Dialog", "Flight ID", 0));
         txt_telephone->setText(QString());
         label_10->setText(QString());
     } // retranslateUi

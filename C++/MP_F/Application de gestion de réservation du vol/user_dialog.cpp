@@ -22,6 +22,14 @@ User_Dialog::User_Dialog(QWidget *parent) :
     int h3 = ui->label_background2->height();
     ui ->label_background2->setPixmap(pix3.scaled(w3,h3,Qt::KeepAspectRatio));
 
+    QPixmap pix4("./Data/Pictures/2155719.jpg");
+    int w4 = ui->bguser->width();
+    int h4= ui->bguser->height();
+    ui ->bguser->setPixmap(pix4.scaled(w4,h4,Qt::KeepAspectRatio));
+    ui ->bguser_2->setPixmap(pix4.scaled(w4,h4,Qt::KeepAspectRatio));
+    ui ->bguser_3->setPixmap(pix4.scaled(w4,h4,Qt::KeepAspectRatio));
+
+
 
     if(!conn.ConnOpen())
     {qDebug()<<("Failed to open database"); return;}

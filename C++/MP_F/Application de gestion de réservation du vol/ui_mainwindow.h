@@ -58,7 +58,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(320, 603);
+        MainWindow->resize(322, 603);
         MainWindow->setTabShape(QTabWidget::Rounded);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
@@ -168,7 +168,7 @@ public:
 
         label_pic = new QLabel(groupBox_2);
         label_pic->setObjectName(QStringLiteral("label_pic"));
-        label_pic->setGeometry(QRect(10, 20, 281, 191));
+        label_pic->setGeometry(QRect(-60, 20, 421, 191));
         QFont font3;
         font3.setStyleStrategy(QFont::PreferAntialias);
         label_pic->setFont(font3);
@@ -177,7 +177,7 @@ public:
         groupBox->raise();
         label_background = new QLabel(centralWidget);
         label_background->setObjectName(QStringLiteral("label_background"));
-        label_background->setGeometry(QRect(0, -10, 481, 571));
+        label_background->setGeometry(QRect(0, -10, 481, 581));
         label_3 = new QLabel(centralWidget);
         label_3->setObjectName(QStringLiteral("label_3"));
         label_3->setGeometry(QRect(0, 20, 321, 41));
@@ -187,10 +187,10 @@ public:
         palette1.setBrush(QPalette::Disabled, QPalette::WindowText, brush1);
         label_3->setPalette(palette1);
         QFont font4;
-        font4.setFamily(QStringLiteral("Segoe UI Light"));
-        font4.setPointSize(14);
+        font4.setFamily(QStringLiteral("High Tower Text"));
+        font4.setPointSize(16);
         font4.setBold(false);
-        font4.setItalic(false);
+        font4.setItalic(true);
         font4.setUnderline(false);
         font4.setWeight(50);
         font4.setStrikeOut(false);
@@ -203,7 +203,7 @@ public:
         label_3->raise();
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 320, 21));
+        menuBar->setGeometry(QRect(0, 0, 322, 21));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));

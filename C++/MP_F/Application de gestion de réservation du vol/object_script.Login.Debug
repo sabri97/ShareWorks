@@ -7,6 +7,7 @@ INPUT(
 ./debug\login.o
 ./debug\gestionvol_dialog.o
 ./debug\gestionvoyageur_dialog.o
+./debug\qrc_MyResource.o
 ./debug\moc_mainwindow.o
 ./debug\moc_admin_dialog.o
 ./debug\moc_user_dialog.o

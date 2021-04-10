@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>695</width>
-    <height>501</height>
+    <height>538</height>
    </rect>
   </property>
   <property name="palette">
@@ -125,15 +125,16 @@
    </property>
    <property name="font">
     <font>
-     <family>Comic Sans MS</family>
-     <pointsize>20</pointsize>
+     <family>High Tower Text</family>
+     <pointsize>22</pointsize>
+     <italic>true</italic>
     </font>
    </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="text">
-    <string>Gestion de voyageur</string>
+    <string>Traveler management</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -143,7 +144,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>340</y>
+     <y>380</y>
      <width>671</width>
      <height>150</height>
     </rect>
@@ -153,9 +154,9 @@
    <property name="geometry">
     <rect>
      <x>440</x>
-     <y>220</y>
+     <y>250</y>
      <width>241</width>
-     <height>111</height>
+     <height>118</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -165,8 +166,9 @@
        <widget class="QPushButton" name="delete_2">
         <property name="font">
          <font>
-          <family>Segoe UI</family>
-          <pointsize>10</pointsize>
+          <family>High Tower Text</family>
+          <pointsize>16</pointsize>
+          <italic>true</italic>
          </font>
         </property>
         <property name="text">
@@ -188,8 +190,9 @@
        <widget class="QPushButton" name="save">
         <property name="font">
          <font>
-          <family>Segoe UI</family>
-          <pointsize>10</pointsize>
+          <family>High Tower Text</family>
+          <pointsize>16</pointsize>
+          <italic>true</italic>
          </font>
         </property>
         <property name="text">
@@ -213,6 +216,13 @@
      <layout class="QHBoxLayout" name="horizontalLayout_7">
       <item>
        <widget class="QPushButton" name="load">
+        <property name="font">
+         <font>
+          <family>High Tower Text</family>
+          <pointsize>16</pointsize>
+          <italic>true</italic>
+         </font>
+        </property>
         <property name="text">
          <string>Load</string>
         </property>
@@ -232,8 +242,9 @@
        <widget class="QPushButton" name="update">
         <property name="font">
          <font>
-          <family>Segoe UI</family>
-          <pointsize>10</pointsize>
+          <family>High Tower Text</family>
+          <pointsize>16</pointsize>
+          <italic>true</italic>
          </font>
         </property>
         <property name="text">
@@ -272,9 +283,9 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>90</y>
+     <y>60</y>
      <width>421</width>
-     <height>241</height>
+     <height>311</height>
     </rect>
    </property>
    <property name="title">
@@ -286,7 +297,7 @@
       <x>10</x>
       <y>19</y>
       <width>401</width>
-      <height>211</height>
+      <height>276</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
@@ -296,12 +307,13 @@
         <widget class="QLabel" name="label_9">
          <property name="font">
           <font>
-           <family>Segoe UI</family>
-           <pointsize>10</pointsize>
+           <family>High Tower Text</family>
+           <pointsize>16</pointsize>
+           <italic>true</italic>
           </font>
          </property>
          <property name="text">
-          <string>ID Voyageur</string>
+          <string>Traveler ID</string>
          </property>
         </widget>
        </item>
@@ -309,12 +321,13 @@
         <widget class="QLabel" name="label_6">
          <property name="font">
           <font>
-           <family>Segoe UI</family>
-           <pointsize>10</pointsize>
+           <family>High Tower Text</family>
+           <pointsize>16</pointsize>
+           <italic>true</italic>
           </font>
          </property>
          <property name="text">
-          <string>Nom et Prénom</string>
+          <string>Last name and first name</string>
          </property>
         </widget>
        </item>
@@ -322,12 +335,13 @@
         <widget class="QLabel" name="label_3">
          <property name="font">
           <font>
-           <family>Segoe UI</family>
-           <pointsize>10</pointsize>
+           <family>High Tower Text</family>
+           <pointsize>16</pointsize>
+           <italic>true</italic>
           </font>
          </property>
          <property name="text">
-          <string>Nationalité</string>
+          <string>Nationality</string>
          </property>
         </widget>
        </item>
@@ -335,12 +349,13 @@
         <widget class="QLabel" name="label_5">
          <property name="font">
           <font>
-           <family>Segoe UI</family>
-           <pointsize>10</pointsize>
+           <family>High Tower Text</family>
+           <pointsize>16</pointsize>
+           <italic>true</italic>
           </font>
          </property>
          <property name="text">
-          <string>Numéro de téléphone</string>
+          <string>Phone number</string>
          </property>
         </widget>
        </item>
@@ -348,8 +363,9 @@
         <widget class="QLabel" name="label_7">
          <property name="font">
           <font>
-           <family>Segoe UI</family>
-           <pointsize>10</pointsize>
+           <family>High Tower Text</family>
+           <pointsize>16</pointsize>
+           <italic>true</italic>
           </font>
          </property>
          <property name="text">
@@ -361,12 +377,13 @@
         <widget class="QLabel" name="label_8">
          <property name="font">
           <font>
-           <family>Segoe UI</family>
-           <pointsize>10</pointsize>
+           <family>High Tower Text</family>
+           <pointsize>16</pointsize>
+           <italic>true</italic>
           </font>
          </property>
          <property name="text">
-          <string>Numéro de passport</string>
+          <string>Passport number</string>
          </property>
         </widget>
        </item>
@@ -374,12 +391,13 @@
         <widget class="QLabel" name="label_4">
          <property name="font">
           <font>
-           <family>Segoe UI</family>
-           <pointsize>10</pointsize>
+           <family>High Tower Text</family>
+           <pointsize>16</pointsize>
+           <italic>true</italic>
           </font>
          </property>
          <property name="text">
-          <string>Date et heure de reservation</string>
+          <string>Date and time of reservation</string>
          </property>
         </widget>
        </item>
@@ -387,12 +405,13 @@
         <widget class="QLabel" name="label_2">
          <property name="font">
           <font>
-           <family>Segoe UI</family>
-           <pointsize>10</pointsize>
+           <family>High Tower Text</family>
+           <pointsize>16</pointsize>
+           <italic>true</italic>
           </font>
          </property>
          <property name="text">
-          <string>ID Vol</string>
+          <string>Flight ID</string>
          </property>
         </widget>
        </item>
@@ -413,28 +432,75 @@
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_4">
          <item>
-          <widget class="QLineEdit" name="txt_nom"/>
+          <widget class="QLineEdit" name="txt_nom">
+           <property name="font">
+            <font>
+             <family>High Tower Text</family>
+             <pointsize>16</pointsize>
+             <italic>true</italic>
+            </font>
+           </property>
+          </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="txt_prenom"/>
+          <widget class="QLineEdit" name="txt_prenom">
+           <property name="font">
+            <font>
+             <family>High Tower Text</family>
+             <pointsize>16</pointsize>
+             <italic>true</italic>
+            </font>
+           </property>
+          </widget>
          </item>
         </layout>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_nationalite"/>
+        <widget class="QLineEdit" name="txt_nationalite">
+         <property name="font">
+          <font>
+           <family>High Tower Text</family>
+           <pointsize>16</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="QLineEdit" name="txt_telephone">
+         <property name="font">
+          <font>
+           <family>High Tower Text</family>
+           <pointsize>16</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
          <property name="text">
           <string/>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_mail"/>
+        <widget class="QLineEdit" name="txt_mail">
+         <property name="font">
+          <font>
+           <family>High Tower Text</family>
+           <pointsize>16</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_numPassport"/>
+        <widget class="QLineEdit" name="txt_numPassport">
+         <property name="font">
+          <font>
+           <family>High Tower Text</family>
+           <pointsize>16</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+        </widget>
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_6">
@@ -464,7 +530,15 @@
         </layout>
        </item>
        <item>
-        <widget class="QLineEdit" name="txt_idVol"/>
+        <widget class="QLineEdit" name="txt_idVol">
+         <property name="font">
+          <font>
+           <family>High Tower Text</family>
+           <pointsize>16</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+        </widget>
        </item>
       </layout>
      </item>
@@ -477,7 +551,7 @@
      <x>0</x>
      <y>0</y>
      <width>721</width>
-     <height>511</height>
+     <height>541</height>
     </rect>
    </property>
    <property name="text">
