@@ -56,6 +56,7 @@ public:
     QLabel *label_12;
     QComboBox *aeroArr;
     QLabel *bguser;
+    QLabel *label_14;
     QWidget *tab_2;
     QPushButton *save;
     QLabel *bguser_2;
@@ -83,6 +84,7 @@ public:
     QLineEdit *txt_dateReservation;
     QLineEdit *txt_heureReservation;
     QLineEdit *txt_idVol;
+    QLabel *label_15;
     QWidget *tab_3;
     QLabel *label;
     QLabel *bguser_3;
@@ -95,20 +97,20 @@ public:
     {
         if (User_Dialog->objectName().isEmpty())
             User_Dialog->setObjectName(QStringLiteral("User_Dialog"));
-        User_Dialog->resize(739, 569);
+        User_Dialog->resize(739, 499);
         tabWidget = new QTabWidget(User_Dialog);
         tabWidget->setObjectName(QStringLiteral("tabWidget"));
-        tabWidget->setGeometry(QRect(20, 20, 681, 491));
+        tabWidget->setGeometry(QRect(20, 20, 691, 411));
         QFont font;
         font.setFamily(QStringLiteral("High Tower Text"));
-        font.setPointSize(16);
+        font.setPointSize(14);
         font.setBold(true);
         font.setItalic(true);
         font.setWeight(75);
         tabWidget->setFont(font);
         tabWidget->setAutoFillBackground(false);
         tabWidget->setTabShape(QTabWidget::Rounded);
-        tabWidget->setIconSize(QSize(40, 40));
+        tabWidget->setIconSize(QSize(30, 30));
         tab = new QWidget();
         tab->setObjectName(QStringLiteral("tab"));
         horizontalLayout_2 = new QHBoxLayout(tab);
@@ -126,7 +128,7 @@ public:
         tab_4->setObjectName(QStringLiteral("tab_4"));
         label_dbState = new QLabel(tab_4);
         label_dbState->setObjectName(QStringLiteral("label_dbState"));
-        label_dbState->setGeometry(QRect(560, 410, 121, 20));
+        label_dbState->setGeometry(QRect(540, 340, 141, 20));
         QPalette palette;
         QBrush brush(QColor(0, 255, 0, 255));
         brush.setStyle(Qt::SolidPattern);
@@ -142,10 +144,10 @@ public:
         label_dbState->setFont(font1);
         tableView = new QTableView(tab_4);
         tableView->setObjectName(QStringLiteral("tableView"));
-        tableView->setGeometry(QRect(10, 210, 671, 171));
+        tableView->setGeometry(QRect(10, 170, 661, 161));
         Valid = new QPushButton(tab_4);
         Valid->setObjectName(QStringLiteral("Valid"));
-        Valid->setGeometry(QRect(570, 140, 111, 51));
+        Valid->setGeometry(QRect(500, 50, 171, 51));
         QFont font2;
         font2.setFamily(QStringLiteral("High Tower Text"));
         font2.setPointSize(16);
@@ -157,13 +159,13 @@ public:
         Valid->setIconSize(QSize(45, 45));
         load = new QPushButton(tab_4);
         load->setObjectName(QStringLiteral("load"));
-        load->setGeometry(QRect(10, 390, 161, 51));
+        load->setGeometry(QRect(500, 110, 171, 51));
         load->setFont(font2);
         load->setIcon(icon1);
         load->setIconSize(QSize(45, 45));
         layoutWidget = new QWidget(tab_4);
         layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
-        layoutWidget->setGeometry(QRect(10, 50, 511, 141));
+        layoutWidget->setGeometry(QRect(10, 50, 481, 115));
         verticalLayout_4 = new QVBoxLayout(layoutWidget);
         verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
         verticalLayout_4->setContentsMargins(0, 0, 0, 0);
@@ -244,6 +246,9 @@ public:
         bguser = new QLabel(tab_4);
         bguser->setObjectName(QStringLiteral("bguser"));
         bguser->setGeometry(QRect(0, 0, 701, 461));
+        label_14 = new QLabel(tab_4);
+        label_14->setObjectName(QStringLiteral("label_14"));
+        label_14->setGeometry(QRect(20, 10, 601, 31));
         QIcon icon2;
         icon2.addFile(QStringLiteral(":/new/prefix1/Data/Pictures/consultingIcone.jpg"), QSize(), QIcon::Normal, QIcon::On);
         tabWidget->addTab(tab_4, icon2, QString());
@@ -253,11 +258,12 @@ public:
         tableView->raise();
         Valid->raise();
         load->raise();
+        label_14->raise();
         tab_2 = new QWidget();
         tab_2->setObjectName(QStringLiteral("tab_2"));
         save = new QPushButton(tab_2);
         save->setObjectName(QStringLiteral("save"));
-        save->setGeometry(QRect(500, 380, 141, 53));
+        save->setGeometry(QRect(500, 300, 181, 51));
         QFont font4;
         font4.setFamily(QStringLiteral("High Tower Text"));
         font4.setPointSize(16);
@@ -273,7 +279,7 @@ public:
         bguser_2->setGeometry(QRect(0, 0, 711, 461));
         layoutWidget_2 = new QWidget(tab_2);
         layoutWidget_2->setObjectName(QStringLiteral("layoutWidget_2"));
-        layoutWidget_2->setGeometry(QRect(40, 80, 461, 298));
+        layoutWidget_2->setGeometry(QRect(10, 101, 481, 251));
         horizontalLayout = new QHBoxLayout(layoutWidget_2);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
@@ -409,17 +415,24 @@ public:
 
         horizontalLayout->addLayout(verticalLayout_3);
 
+        label_15 = new QLabel(tab_2);
+        label_15->setObjectName(QStringLiteral("label_15"));
+        label_15->setGeometry(QRect(10, 10, 661, 71));
         QIcon icon4;
         icon4.addFile(QStringLiteral(":/new/prefix1/Data/Pictures/inscription.png"), QSize(), QIcon::Normal, QIcon::On);
         tabWidget->addTab(tab_2, icon4, QString());
         bguser_2->raise();
         save->raise();
         layoutWidget_2->raise();
+        label_15->raise();
         tab_3 = new QWidget();
         tab_3->setObjectName(QStringLiteral("tab_3"));
         label = new QLabel(tab_3);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(20, 10, 480, 104));
+        label->setGeometry(QRect(10, 10, 681, 161));
+        QFont font5;
+        font5.setPointSize(11);
+        label->setFont(font5);
         bguser_3 = new QLabel(tab_3);
         bguser_3->setObjectName(QStringLiteral("bguser_3"));
         bguser_3->setGeometry(QRect(0, 0, 701, 461));
@@ -431,16 +444,16 @@ public:
         label_background2 = new QLabel(User_Dialog);
         label_background2->setObjectName(QStringLiteral("label_background2"));
         label_background2->setGeometry(QRect(0, 0, 911, 581));
-        QFont font5;
-        font5.setStyleStrategy(QFont::PreferAntialias);
-        label_background2->setFont(font5);
+        QFont font6;
+        font6.setStyleStrategy(QFont::PreferAntialias);
+        label_background2->setFont(font6);
         label_background2->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop);
         groupBox = new QGroupBox(User_Dialog);
         groupBox->setObjectName(QStringLiteral("groupBox"));
-        groupBox->setGeometry(QRect(20, 520, 701, 43));
+        groupBox->setGeometry(QRect(20, 440, 691, 43));
         label_time = new QLabel(groupBox);
         label_time->setObjectName(QStringLiteral("label_time"));
-        label_time->setGeometry(QRect(600, 10, 91, 20));
+        label_time->setGeometry(QRect(590, 10, 101, 20));
         QPalette palette1;
         QBrush brush2(QColor(113, 113, 113, 255));
         brush2.setStyle(Qt::SolidPattern);
@@ -448,13 +461,13 @@ public:
         palette1.setBrush(QPalette::Inactive, QPalette::WindowText, brush2);
         palette1.setBrush(QPalette::Disabled, QPalette::WindowText, brush1);
         label_time->setPalette(palette1);
-        QFont font6;
-        font6.setFamily(QStringLiteral("Comic Sans MS"));
-        font6.setPointSize(12);
-        font6.setBold(false);
-        font6.setItalic(false);
-        font6.setWeight(50);
-        label_time->setFont(font6);
+        QFont font7;
+        font7.setFamily(QStringLiteral("Comic Sans MS"));
+        font7.setPointSize(12);
+        font7.setBold(false);
+        font7.setItalic(false);
+        font7.setWeight(50);
+        label_time->setFont(font7);
         label_date = new QLabel(groupBox);
         label_date->setObjectName(QStringLiteral("label_date"));
         label_date->setGeometry(QRect(10, 10, 151, 21));
@@ -465,10 +478,10 @@ public:
         palette2.setBrush(QPalette::Inactive, QPalette::WindowText, brush3);
         palette2.setBrush(QPalette::Disabled, QPalette::WindowText, brush1);
         label_date->setPalette(palette2);
-        QFont font7;
-        font7.setFamily(QStringLiteral("Comic Sans MS"));
-        font7.setPointSize(12);
-        label_date->setFont(font7);
+        QFont font8;
+        font8.setFamily(QStringLiteral("Comic Sans MS"));
+        font8.setPointSize(12);
+        label_date->setFont(font8);
         label_background2->raise();
         tabWidget->raise();
         groupBox->raise();
@@ -484,7 +497,7 @@ public:
     void retranslateUi(QDialog *User_Dialog)
     {
         User_Dialog->setWindowTitle(QApplication::translate("User_Dialog", "Dialog", 0));
-        label_bienvenue_admin->setText(QString());
+        label_bienvenue_admin->setText(QApplication::translate("User_Dialog", "R", 0));
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("User_Dialog", "Welcome", 0));
         label_dbState->setText(QApplication::translate("User_Dialog", "TextLabel", 0));
         Valid->setText(QApplication::translate("User_Dialog", "Valid", 0));
@@ -494,6 +507,7 @@ public:
         label_13->setText(QApplication::translate("User_Dialog", "Departure airport", 0));
         label_12->setText(QApplication::translate("User_Dialog", "Airport arrived", 0));
         bguser->setText(QApplication::translate("User_Dialog", "TextLabel", 0));
+        label_14->setText(QApplication::translate("User_Dialog", "You can use this page to check the available flight. ", 0));
         tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("User_Dialog", "Travel consultation", 0));
         save->setText(QApplication::translate("User_Dialog", "Save", 0));
         bguser_2->setText(QApplication::translate("User_Dialog", "TextLabel", 0));
@@ -506,6 +520,9 @@ public:
         label_4->setText(QApplication::translate("User_Dialog", "Date et heure de reservation", 0));
         label_2->setText(QApplication::translate("User_Dialog", "ID Vol", 0));
         txt_telephone->setText(QString());
+        label_15->setText(QApplication::translate("User_Dialog", "You can use this page to check in. \n"
+"You\342\200\231ll still need to go to the airport check-in counter for us to verify your travel\n"
+" documents and issue your boarding pass.", 0));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("User_Dialog", "Inscription", 0));
         label->setText(QApplication::translate("User_Dialog", "Sujet 7 : Application de gestion de r\303\251servation du vol\n"
 "L\342\200\231objectif est de d\303\251velopper une application graphique permettant de g\303\251rer les r\303\251servations des vols\n"

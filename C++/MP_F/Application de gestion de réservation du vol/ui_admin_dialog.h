@@ -14,7 +14,6 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QDialog>
-#include <QtWidgets/QFrame>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
@@ -58,26 +57,25 @@ public:
     QGroupBox *groupBox;
     QLabel *label_time;
     QLabel *label_date;
-    QFrame *frame;
 
     void setupUi(QDialog *Admin_Dialog)
     {
         if (Admin_Dialog->objectName().isEmpty())
             Admin_Dialog->setObjectName(QStringLiteral("Admin_Dialog"));
-        Admin_Dialog->resize(756, 492);
+        Admin_Dialog->resize(743, 504);
         tabWidget = new QTabWidget(Admin_Dialog);
         tabWidget->setObjectName(QStringLiteral("tabWidget"));
         tabWidget->setGeometry(QRect(30, 20, 691, 411));
         QFont font;
         font.setFamily(QStringLiteral("High Tower Text"));
-        font.setPointSize(16);
+        font.setPointSize(14);
         font.setBold(true);
         font.setItalic(true);
         font.setWeight(75);
         tabWidget->setFont(font);
         tabWidget->setAutoFillBackground(false);
         tabWidget->setTabShape(QTabWidget::Rounded);
-        tabWidget->setIconSize(QSize(40, 40));
+        tabWidget->setIconSize(QSize(30, 40));
         tab = new QWidget();
         tab->setObjectName(QStringLiteral("tab"));
         horizontalLayout_2 = new QHBoxLayout(tab);
@@ -95,14 +93,14 @@ public:
         tab_2->setObjectName(QStringLiteral("tab_2"));
         label_login = new QLabel(tab_2);
         label_login->setObjectName(QStringLiteral("label_login"));
-        label_login->setGeometry(QRect(420, 120, 201, 201));
+        label_login->setGeometry(QRect(450, 120, 201, 201));
         QFont font1;
         font1.setStyleStrategy(QFont::PreferAntialias);
         label_login->setFont(font1);
         label_login->setAlignment(Qt::AlignCenter);
         label_2 = new QLabel(tab_2);
         label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(410, 20, 231, 61));
+        label_2->setGeometry(QRect(410, 50, 281, 61));
         QFont font2;
         font2.setFamily(QStringLiteral("High Tower Text"));
         font2.setPointSize(16);
@@ -113,7 +111,7 @@ public:
         label_2->setScaledContents(true);
         layoutWidget = new QWidget(tab_2);
         layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
-        layoutWidget->setGeometry(QRect(10, 10, 391, 311));
+        layoutWidget->setGeometry(QRect(10, 20, 391, 311));
         verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
@@ -197,10 +195,13 @@ public:
         tab_3->setObjectName(QStringLiteral("tab_3"));
         label = new QLabel(tab_3);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(10, 10, 480, 104));
+        label->setGeometry(QRect(10, 10, 661, 161));
+        QFont font5;
+        font5.setPointSize(11);
+        label->setFont(font5);
         bguser_3 = new QLabel(tab_3);
         bguser_3->setObjectName(QStringLiteral("bguser_3"));
-        bguser_3->setGeometry(QRect(0, 0, 701, 461));
+        bguser_3->setGeometry(QRect(0, -10, 691, 481));
         QIcon icon2;
         icon2.addFile(QStringLiteral(":/new/prefix1/Data/Pictures/aboutIcone.png"), QSize(), QIcon::Normal, QIcon::On);
         tabWidget->addTab(tab_3, icon2, QString());
@@ -213,7 +214,7 @@ public:
         label_background2->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop);
         groupBox = new QGroupBox(Admin_Dialog);
         groupBox->setObjectName(QStringLiteral("groupBox"));
-        groupBox->setGeometry(QRect(30, 440, 701, 43));
+        groupBox->setGeometry(QRect(30, 440, 691, 43));
         label_time = new QLabel(groupBox);
         label_time->setObjectName(QStringLiteral("label_time"));
         label_time->setGeometry(QRect(600, 10, 91, 20));
@@ -224,13 +225,13 @@ public:
         palette1.setBrush(QPalette::Inactive, QPalette::WindowText, brush2);
         palette1.setBrush(QPalette::Disabled, QPalette::WindowText, brush1);
         label_time->setPalette(palette1);
-        QFont font5;
-        font5.setFamily(QStringLiteral("Comic Sans MS"));
-        font5.setPointSize(12);
-        font5.setBold(false);
-        font5.setItalic(false);
-        font5.setWeight(50);
-        label_time->setFont(font5);
+        QFont font6;
+        font6.setFamily(QStringLiteral("Comic Sans MS"));
+        font6.setPointSize(12);
+        font6.setBold(false);
+        font6.setItalic(false);
+        font6.setWeight(50);
+        label_time->setFont(font6);
         label_date = new QLabel(groupBox);
         label_date->setObjectName(QStringLiteral("label_date"));
         label_date->setGeometry(QRect(10, 10, 151, 21));
@@ -241,17 +242,11 @@ public:
         palette2.setBrush(QPalette::Inactive, QPalette::WindowText, brush3);
         palette2.setBrush(QPalette::Disabled, QPalette::WindowText, brush1);
         label_date->setPalette(palette2);
-        QFont font6;
-        font6.setFamily(QStringLiteral("Comic Sans MS"));
-        font6.setPointSize(12);
-        label_date->setFont(font6);
-        frame = new QFrame(Admin_Dialog);
-        frame->setObjectName(QStringLiteral("frame"));
-        frame->setGeometry(QRect(10, 10, 741, 481));
-        frame->setFrameShape(QFrame::StyledPanel);
-        frame->setFrameShadow(QFrame::Raised);
+        QFont font7;
+        font7.setFamily(QStringLiteral("Comic Sans MS"));
+        font7.setPointSize(12);
+        label_date->setFont(font7);
         label_background2->raise();
-        frame->raise();
         tabWidget->raise();
         groupBox->raise();
 

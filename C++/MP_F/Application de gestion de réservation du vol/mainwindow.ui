@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>322</width>
-    <height>603</height>
+    <height>569</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -241,7 +241,6 @@
     </widget>
     <zorder>label_pic</zorder>
     <zorder>groupBox</zorder>
-    <zorder>label_3</zorder>
    </widget>
    <widget class="QLabel" name="label_background">
     <property name="geometry">
@@ -325,16 +324,6 @@ du vol</string>
    <zorder>label_background</zorder>
    <zorder>groupBox_2</zorder>
    <zorder>label_3</zorder>
-  </widget>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>322</width>
-     <height>21</height>
-    </rect>
-   </property>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
